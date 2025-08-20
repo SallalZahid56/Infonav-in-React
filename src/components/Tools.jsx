@@ -1,6 +1,6 @@
 import React from "react";
 
-// ✅ Placeholder tool logos (replace with actual logos in /assets/tools/)
+// ✅ Replace with actual tool logos
 import hubspot from "../assets/hubspot.svg";
 import salesforce from "../assets/hubspot.svg";
 import linkedin from "../assets/hubspot.svg";
@@ -17,39 +17,16 @@ import wordpress from "../assets/hubspot.svg";
 import shopify from "../assets/hubspot.svg";
 import reactLogo from "../assets/hubspot.svg";
 
-const services = [
-  {
-    title: "Lead Generation",
-    tools: [hubspot, salesforce, linkedin],
-  },
-  {
-    title: "Data Entry",
-    tools: [excel, googleSheets, hubspot],
-  },
-  {
-    title: "Influencer Research",
-    tools: [linkedin, buzzsumo, excel],
-  },
-  {
-    title: "Internet Research",
-    tools: [googleSheets, semrush, ahrefs],
-  },
-  {
-    title: "Data Extraction",
-    tools: [python, scrapy, beautifulsoup],
-  },
-  {
-    title: "Python Scraping",
-    tools: [python, scrapy, beautifulsoup],
-  },
-  {
-    title: "SEO",
-    tools: [semrush, ahrefs, moz],
-  },
-  {
-    title: "Web Development",
-    tools: [wordpress, shopify, reactLogo],
-  },
+// ✅ Example tools (3 per service → total 24)
+const tools = [
+  hubspot, salesforce, linkedin,   // Lead Generation
+  excel, googleSheets, hubspot,    // Data Entry
+  linkedin, buzzsumo, excel,       // Influencer Research
+  googleSheets, semrush, ahrefs,   // Internet Research
+  python, scrapy, beautifulsoup,   // Data Extraction
+  python, scrapy, beautifulsoup,   // Python Scraping
+  semrush, ahrefs, moz,            // SEO
+  wordpress, shopify, reactLogo,   // Web Development
 ];
 
 const Tools = () => {
@@ -61,32 +38,20 @@ const Tools = () => {
           Tools We <span className="text-brandOrange">Use</span>
         </h2>
         <p className="font-sans text-gray-600 mt-4 text-base">
-          Powering our <span className="font-semibold">SEO</span>, lead
-          generation, web development, and automation with industry-leading tools.
+          We empower <span className="font-semibold">SEO</span>, lead generation, 
+          scraping, and web development with industry-leading tools.
         </p>
       </div>
 
-      {/* Services + Tools */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="p-6 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition"
-          >
-            <h3 className="font-heading text-lg font-semibold text-gray-900 text-center mb-6">
-              {service.title}
-            </h3>
-            <div className="flex justify-center gap-6 flex-wrap">
-              {service.tools.map((tool, i) => (
-                <img
-                  key={i}
-                  src={tool}
-                  alt={`${service.title} tool ${i}`}
-                  className="w-14 h-14 object-contain grayscale hover:grayscale-0 transition"
-                />
-              ))}
-            </div>
-          </div>
+      {/* Logos Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 justify-items-center">
+        {tools.map((tool, i) => (
+          <img
+            key={i}
+            src={tool}
+            alt={`Tool ${i}`}
+            className="w-20 h-20 sm:w-24 sm:h-24 object-contain"
+          />
         ))}
       </div>
     </section>
