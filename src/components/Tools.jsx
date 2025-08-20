@@ -1,21 +1,21 @@
 import React from "react";
 
 // ✅ Replace with actual tool logos
-import hubspot from "../assets/hubspot.svg";
-import salesforce from "../assets/hubspot.svg";
-import linkedin from "../assets/hubspot.svg";
-import excel from "../assets/hubspot.svg";
-import googleSheets from "../assets/hubspot.svg";
-import buzzsumo from "../assets/hubspot.svg";
-import semrush from "../assets/hubspot.svg";
-import ahrefs from "../assets/hubspot.svg";
-import moz from "../assets/hubspot.svg";
-import python from "../assets/hubspot.svg";
-import beautifulsoup from "../assets/hubspot.svg";
-import scrapy from "../assets/hubspot.svg";
-import wordpress from "../assets/hubspot.svg";
-import shopify from "../assets/hubspot.svg";
-import reactLogo from "../assets/hubspot.svg";
+import hubspot from "../assets/hubspot.png";
+import salesforce from "../assets/salesforce.png";
+import linkedin from "../assets/linkedinn.png";
+import excel from "../assets/excel.png";
+import googleSheets from "../assets/googlesheets.jpeg";
+import buzzsumo from "../assets/Buzzsumo-Logo.png";
+import semrush from "../assets/semrush.png";
+import ahrefs from "../assets/ahrefs.png";
+import moz from "../assets/moz.png";
+import python from "../assets/python.png";
+import beautifulsoup from "../assets/beautifulsoup.jpg";
+import scrapy from "../assets/scrapyy.png";
+import wordpress from "../assets/wordpress.webp";
+import shopify from "../assets/shopify.png";
+import reactLogo from "../assets/react.png";
 
 // ✅ Example tools (3 per service → total 24)
 const tools = [
