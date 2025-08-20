@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"; // ✅ correct path to your component
 import Hero from "./components/Hero";
 import Strategy from "./components/Strategy"
 import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Strategy />
       <Services />
+      <Testimonials />
     </>
   );
 }
