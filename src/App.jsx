@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Strategy from "./components/Strategy"
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
+import Tools from "./components/Tools";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Strategy />
       <Services />
+      <Tools />
       <Testimonials />
     </>
   );

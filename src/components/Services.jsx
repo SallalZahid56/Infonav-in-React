@@ -59,7 +59,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-gray-900">
-          Our Bespoke <span className="text-brandOrange">Services</span>
+          Our <span className="text-brandOrange">Services</span>
         </h2>
         <p className="font-sans text-gray-600 mt-4 max-w-2xl mx-auto">
           At InfoNav, we offer a comprehensive range of services to meet the evolving sales needs of businesses:
