@@ -44,7 +44,7 @@ const services = [
   {
     icon: FaChartLine,
     title: "SEO",
-    desc: "In today’s competitive digital world, SEO isn’t just a nice-to-have — it’s the fuel that drives sustainable business growth. At InfoNavigators, based in New York and operating globally, we provide strategic, data-driven SEO consulting services that help businesses maximize visibility, attract targeted traffic, and convert leads into loyal customers. Whether you run a startup, a travel agency, an ecommerce brand, or a service-based company, SEO is the foundation of online growth. But most businesses struggle to implement SEO that works — and that’s where our expertise makes all the difference.",
+    desc: "At InfoNavigators, a New York-based global agency, we provide data-driven SEO consulting that maximizes visibility, drives targeted traffic, and converts leads into loyal customers. From startups to ecommerce and service brands, our strategic SEO ensures sustainable online growth.",
   },
   {
     icon: FaCode,
