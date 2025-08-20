@@ -21,16 +21,16 @@ const Strategy = () => {
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Data Driven */}
-        <div className="border border-brandOrange rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition">
+        <div className="group border border-brandOrange rounded-2xl p-8 text-center shadow-sm transition bg-white hover:bg-brandOrange hover:border-white hover:shadow-lg">
           <div className="flex justify-center mb-6">
-            <div className="bg-brandOrange text-white p-6 rounded-full">
+            <div className="bg-brandOrange text-white p-6 rounded-full transition group-hover:bg-white group-hover:text-brandOrange">
               <FaChartBar size={40} />
             </div>
           </div>
-          <h3 className="font-heading text-xl font-semibold text-gray-900 mb-4">
+          <h3 className="font-heading text-xl font-semibold text-gray-900 mb-4 transition group-hover:text-white">
             Data Driven
           </h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
+          <p className="font-sans text-gray-600 text-sm leading-relaxed transition group-hover:text-white">
             At the time of strategy development, we utilize industry-specific
             data to direct our solutions in the right direction. It's not the
             opinion but the data that maps the blueprints of our local internet
@@ -39,16 +39,16 @@ const Strategy = () => {
         </div>
 
         {/* Customer Driven */}
-        <div className="border border-brandOrange rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition">
+        <div className="group border border-brandOrange rounded-2xl p-8 text-center shadow-sm transition bg-white hover:bg-brandOrange hover:border-white hover:shadow-lg">
           <div className="flex justify-center mb-6">
-            <div className="bg-brandOrange text-white p-6 rounded-full">
+            <div className="bg-brandOrange text-white p-6 rounded-full transition group-hover:bg-white group-hover:text-brandOrange">
               <FaUsers size={40} />
             </div>
           </div>
-          <h3 className="font-heading text-xl font-semibold text-gray-900 mb-4">
+          <h3 className="font-heading text-xl font-semibold text-gray-900 mb-4 transition group-hover:text-white">
             Customer Driven
           </h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
+          <p className="font-sans text-gray-600 text-sm leading-relaxed transition group-hover:text-white">
             To keep our efforts aligned with the client's requirements, we follow
             a customer-centric approach. The satisfaction of our clients is our
             foremost priority. We are the outsourced yet dedicated local internet
@@ -57,16 +57,16 @@ const Strategy = () => {
         </div>
 
         {/* Performance Driven */}
-        <div className="border border-brandOrange rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition">
+        <div className="group border border-brandOrange rounded-2xl p-8 text-center shadow-sm transition bg-white hover:bg-brandOrange hover:border-white hover:shadow-lg">
           <div className="flex justify-center mb-6">
-            <div className="bg-brandOrange text-white p-6 rounded-full">
+            <div className="bg-brandOrange text-white p-6 rounded-full transition group-hover:bg-white group-hover:text-brandOrange">
               <FaTachometerAlt size={40} />
             </div>
           </div>
-          <h3 className="font-heading text-xl font-semibold text-gray-900 mb-4">
+          <h3 className="font-heading text-xl font-semibold text-gray-900 mb-4 transition group-hover:text-white">
             Performance Driven
           </h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
+          <p className="font-sans text-gray-600 text-sm leading-relaxed transition group-hover:text-white">
             On the mission of providing you with tailored digital marketing
             solutions for your company, we analyze the outcomes with a keen eye
             for each detail. To achieve surging growth, we utilize highly
