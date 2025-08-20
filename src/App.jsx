@@ -5,6 +5,7 @@ import Strategy from "./components/Strategy"
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Tools from "./components/Tools";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Tools />
       <Testimonials />
+      <Footer />
     </>
   );
 }
