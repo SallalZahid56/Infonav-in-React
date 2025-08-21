@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
       {/* Subheading */}
       <div className="text-center mb-10">
         <h3 className="font-heading text-2xl font-bold text-gray-900">
-           What Makes Us Different?
+           What Makes <span className="text-brandOrange">Us Different?</span> 
         </h3>
       </div>
 
