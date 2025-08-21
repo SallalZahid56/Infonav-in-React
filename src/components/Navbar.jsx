@@ -11,7 +11,7 @@ const Navbar = () => {
         
         {/* Left: Logo */}
         <div>
-          <a href="#home">
+          <a href="/">
             <img
               src={logo}
               alt="InfoNav Logo"
@@ -22,9 +22,9 @@ const Navbar = () => {
 
         {/* Center: Nav Links (Desktop → lg and up) */}
         <ul className="hidden lg:flex space-x-6 font-heading text-base">
-          <li><a href="#home" className="text-black hover:text-brandOrange transition">Home</a></li>
+          <li><a href="/" className="text-black hover:text-brandOrange transition">Home</a></li>
           <li><a href="#services" className="text-black hover:text-brandOrange transition">Services</a></li>
-          <li><a href="#about" className="text-black hover:text-brandOrange transition">About Us</a></li>
+          <li><a href="/about" className="text-black hover:text-brandOrange transition">About Us</a></li>
           <li><a href="#portfolio" className="text-black hover:text-brandOrange transition">Portfolio</a></li>
           <li><a href="#team" className="text-black hover:text-brandOrange transition">Our Team</a></li>
           <li><a href="#contact" className="text-black hover:text-brandOrange transition">Contact Us</a></li>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <a
             href="#contact"
-            className="bg-brandOrange text-white px-4 py-1.5 rounded-full shadow hover:bg-black hover:text-white transition"
+            className="bg-brandOrange text-white px-6 py-4 rounded-full shadow hover:bg-black hover:text-white transition"
           >
             Book a Call
           </a>
