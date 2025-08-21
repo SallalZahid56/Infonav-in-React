@@ -3,29 +3,54 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 
 const faqs = [
   {
-    question: "What services does InfoNavigators provide?",
+    question: "What services does Info Navigators offer?",
     answer:
-      "We offer Digital Marketing, SEO, Lead Generation, Data Entry, Python Scraping, Internet Research, Influencer Research, and Web Development services tailored for business growth.",
+      "Info Navigators provides a full suite of digital solutions including SEO Consulting Services, Lead Generation, Data Entry & Cleaning, Online Internet Research, Web Development, and more. Each service is tailored to help businesses grow with accurate data, online visibility, and qualified leads.",
   },
   {
-    question: "How does SEO help my business?",
+    question: "How does your Lead Generation service work?",
     answer:
-      "SEO increases your website’s visibility on search engines, drives organic traffic, improves brand credibility, and boosts lead conversions over time.",
+      "Our Lead Generation Services focus on delivering qualified B2B and B2C leads through proven methods like email list building, LinkedIn prospecting, influencer research, and cold outreach. We verify every contact, so your sales team spends less time searching and more time closing deals.",
   },
   {
-    question: "Do you work with startups and small businesses?",
+    question: "Why is accurate Data Entry important?",
     answer:
-      "Yes! We customize our strategies to meet the needs of startups, small businesses, and enterprises with affordable and scalable solutions.",
+      "Accurate data entry ensures that your marketing and sales campaigns target the right audience without errors. Our Data Entry Services include CRM Data Entry and Data Cleaning & Formatting, which eliminate duplicates, correct errors, and standardize your database for smooth operations.",
   },
   {
-    question: "How many projects have you successfully delivered?",
+    question: "Do you provide Internet & Market Research services?",
     answer:
-      "We have successfully delivered 200+ projects worldwide across multiple industries, helping clients achieve measurable results.",
+      "Yes. Our Online Internet Research Services help businesses gather insights on competitors, markets, and customers. From Market Research & Competitor Analysis to Data Verification & Fact-Checking, we ensure your decisions are backed by verified, actionable data.",
   },
   {
-    question: "Why should I choose InfoNavigators?",
+    question: "What industries do you serve with Lead Generation and Research?",
     answer:
-      "We combine affordability, proven experience, and trusted client relationships to deliver tailored solutions for your digital growth.",
+      "We work with diverse industries such as SaaS, eCommerce, Real Estate, Finance, Healthcare, and Professional Services. Our customized B2B Lead Generation and B2C Lead Generation strategies ensure industry-specific targeting.",
+  },
+  {
+    question: "Is SEO still effective for businesses in 2025?",
+    answer:
+      "Absolutely. SEO is the foundation of digital growth. Our SEO Services ensure your brand ranks higher in Google, builds credibility, and attracts long-term organic traffic—unlike paid ads that stop once the budget ends.",
+  },
+  {
+    question: "Do you offer Web Development along with Marketing?",
+    answer:
+      "Yes. A strong online presence starts with a powerful website. Our Web Development Services include responsive design, eCommerce sites, and custom solutions that integrate seamlessly with SEO and lead generation strategies.",
+  },
+  {
+    question: "Can I get a sample of leads before committing?",
+    answer:
+      "Yes. We provide sample B2B Leads so you can test the accuracy and relevance before starting a larger campaign. Explore our Lead Generation Page to learn how we deliver clean, verified data.",
+  },
+  {
+    question: "Do you provide global services or only local clients?",
+    answer:
+      "Info Navigators works with clients across the world. Whether you need International B2B Leads or Local Market Research, our team adapts strategies for your target geography.",
+  },
+  {
+    question: "How do I get started with Info Navigators?",
+    answer:
+      "Getting started is easy. Simply Contact Us or Book a Call with our experts. We’ll analyze your business goals and suggest the right combination of services—whether it’s Lead Generation, SEO, or Data Research.",
   },
 ];
 
@@ -40,7 +65,7 @@ const FAQ = () => {
     <section className="w-full bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-20">
       {/* Heading */}
       <div className="text-center max-w-2xl md:max-w-3xl mx-auto mb-8 sm:mb-12">
-        <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-black">
+        <h2 className="font-heading text-xl sm:text-2xl md:text-3xl font-bold text-black">
           Frequently Asked <span className="text-brandOrange">Questions</span>
         </h2>
       </div>
@@ -50,24 +75,24 @@ const FAQ = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-200 rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-sm"
+            className="border border-gray-200 rounded-lg sm:rounded-xl p-4 sm:p-5 shadow-sm"
           >
             {/* Question */}
             <div
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
-              <h3 className="font-heading text-base sm:text-lg md:text-xl font-semibold text-black pr-4">
+              <h3 className="font-heading text-sm sm:text-base md:text-lg font-semibold text-black pr-4">
                 {faq.question}
               </h3>
-              <span className="text-brandOrange text-lg sm:text-xl md:text-2xl flex-shrink-0">
+              <span className="text-brandOrange text-base sm:text-lg md:text-xl flex-shrink-0">
                 {openIndex === index ? <FaMinus /> : <FaPlus />}
               </span>
             </div>
 
             {/* Answer */}
             {openIndex === index && (
-              <p className="mt-3 sm:mt-4 text-sm sm:text-base text-black font-sans leading-relaxed">
+              <p className="mt-3 sm:mt-4 text-xs sm:text-sm md:text-base text-black font-sans leading-relaxed">
                 {faq.answer}
               </p>
             )}
