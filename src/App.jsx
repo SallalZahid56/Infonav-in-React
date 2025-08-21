@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Tools from "./components/Tools";
 import Footer from "./components/Footer";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Strategy />
       <Services />
       <Tools />
+      <WhyChooseUs />
       <Testimonials />
       <Footer />
     </>
