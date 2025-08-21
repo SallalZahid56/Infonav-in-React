@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; 
-import logo from "../assets/logo.png"; 
+import logo from "../assets/logoo.png"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <a
             href="#contact"
-            className="bg-brandOrange text-white px-6 py-4 rounded-full shadow hover:bg-black hover:text-white transition"
+            className="bg-brandOrange text-white px-6 py-3 rounded-full shadow hover:bg-black hover:text-white transition"
           >
             Book a Call
           </a>
