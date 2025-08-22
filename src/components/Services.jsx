@@ -9,6 +9,7 @@ import {
   FaChartLine,
   FaCode,
 } from "react-icons/fa";
+import { Link } from "react-router-dom"; // ✅ Import Link for navigation
 
 const services = [
   {
@@ -88,6 +89,16 @@ const Services = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* ✅ Learn More Button */}
+        <div className="mt-12">
+          <Link
+            to="/ServicesPage"
+            className="inline-block bg-brandOrange text-white font-heading text-lg font-semibold py-3 px-8 rounded-full shadow-md hover:bg-black hover:text-white transition"
+          >
+            Learn More
+          </Link>
         </div>
       </div>
     </section>

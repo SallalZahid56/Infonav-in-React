@@ -23,7 +23,7 @@ const Navbar = () => {
         {/* Center: Nav Links (Desktop → lg and up) */}
         <ul className="hidden lg:flex space-x-6 font-heading text-base">
           <li><a href="/" className="text-black hover:text-brandOrange transition">Home</a></li>
-          <li><a href="/services" className="text-black hover:text-brandOrange transition">Services</a></li>
+          <li><a href="/servicesPage" className="text-black hover:text-brandOrange transition">Services</a></li>
           <li><a href="/about" className="text-black hover:text-brandOrange transition">About Us</a></li>
           <li><a href="#portfolio" className="text-black hover:text-brandOrange transition">Portfolio</a></li>
           <li><a href="#team" className="text-black hover:text-brandOrange transition">Our Team</a></li>

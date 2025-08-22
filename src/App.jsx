@@ -44,7 +44,7 @@ function App() {
         {/* About Us Page */}
         <Route path="/about" element={<AboutUs />} />
 
-        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/servicesPage" element={<ServicesPage />} />
       </Routes>
 
       {/* Footer always visible */}
