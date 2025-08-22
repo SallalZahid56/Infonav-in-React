@@ -13,6 +13,10 @@ import FAQ from "./components/FAQ";
 
 // ✅ About page
 import AboutUs from "./pages/AboutUs"; // we'll create this in pages folder
+import ServicesPage from "./pages/ServicesPage";
+
+
+
 
 function App() {
   return (
@@ -39,6 +43,8 @@ function App() {
 
         {/* About Us Page */}
         <Route path="/about" element={<AboutUs />} />
+
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
 
       {/* Footer always visible */}
