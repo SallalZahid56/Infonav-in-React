@@ -1,7 +1,7 @@
 import React from "react";
 import aboutImg from "../assets/aboutus.png";
 import MissionVision from "../components/MissionVision";
-import SeoSection from "../components/SeoSection";
+import ExpertiseSection from "../components/ExpertiseSection";
 import TeamSection from "../components/TeamSection";
 
 const AboutUs = () => {
@@ -46,7 +46,7 @@ const AboutUs = () => {
       </section>
 
       {/* ✅ MissionVision Section */}
-      <SeoSection />
+      <ExpertiseSection />
       <MissionVision />
       <TeamSection />
     </>
