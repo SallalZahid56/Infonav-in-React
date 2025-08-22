@@ -1,17 +1,17 @@
 import React from "react";
-import team1 from "../assets/excel.png"; // Replace with your images
-import team2 from "../assets/excel.png";
-import team3 from "../assets/excel.png";
-import team4 from "../assets/excel.png";
-import team5 from "../assets/excel.png";
+import team1 from "../assets/B-re.png"; // Replace with your images
+import team2 from "../assets/A-re.png";
+import team3 from "../assets/N-re.png";
+import team4 from "../assets/J-re.png";
+import team5 from "../assets/Aw-re.png";
 
 const TeamSection = () => {
   const teamMembers = [
-    { img: team1, name: "John Doe", role: "CEO & Founder" },
-    { img: team2, name: "Jane Smith", role: "Marketing Head" },
-    { img: team3, name: "Alex Johnson", role: "Lead Developer" },
-    { img: team4, name: "Emily Davis", role: "Project Manager" },
-    { img: team5, name: "Michael Brown", role: "SEO Specialist" },
+    { img: team1, name: "Bilal Haider", role: "CEO & Founder" },
+    { img: team2, name: "Ahmad Attique", role: "Marketing Head" },
+    { img: team3, name: "Muhammad Naeem", role: "Lead Developer" },
+    { img: team4, name: "Junaid Iqbal", role: "Project Manager" },
+    { img: team5, name: "Awais Ali", role: "SEO Specialist" },
   ];
 
   return (
@@ -34,7 +34,7 @@ const TeamSection = () => {
             className="flex flex-col items-center text-center"
           >
             {/* Image */}
-            <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg mb-4">
+            <div className="w-40 h-40 rounded-full bg-brandOrange overflow-hidden shadow-lg mb-4">
               <img
                 src={member.img}
                 alt={member.name}
