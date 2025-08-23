@@ -48,10 +48,7 @@ const Navbar = () => {
                   {/* Category 1 */}
                   <div>
                     <h5 className="font-semibold mb-2">
-                      <Link
-                        to="/services/lead-generation"
-                        className="text-brandOrange hover:text-brandOrange transition"
-                      >
+                      <Link to="/services/lead-generation" className="text-brandOrange hover:text-brandOrange transition">
                         Lead Generation
                       </Link>
                     </h5>
