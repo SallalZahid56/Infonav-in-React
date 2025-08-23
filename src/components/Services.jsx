@@ -18,11 +18,6 @@ const services = [
     desc: "Lead generation is the heartbeat of a successful sales strategy. At InfoNav, we specialize in delivering targeted, high-quality leads that align perfectly with your ideal customer profile (ICP).",
   },
   {
-    icon: FaKeyboard,
-    title: "Data Entry",
-    desc: "In today’s fast-paced digital world, accurate and organized data is the backbone of every successful business operation. At InfoNav, we understand how vital reliable data entry services are to maintaining the integrity and accessibility of your information.",
-  },
-  {
     icon: FaUserFriends,
     title: "Influencer Research",
     desc: "In today’s digital landscape, influencer marketing has become one of the most effective strategies for expanding brand awareness and building authentic customer relationships.",
@@ -41,6 +36,11 @@ const services = [
     icon: FaPython,
     title: "Python Scraping",
     desc: "In a world overflowing with online information, staying competitive means having access to the right data at the right time. Our Python Scraping service is designed to help you efficiently gather structured data from multiple sources — including websites, directories, e-commerce platforms, forums, and more — using powerful, customized Python scripts.",
+  },
+  {
+    icon: FaKeyboard,
+    title: "Data Entry",
+    desc: "In today’s fast-paced digital world, accurate and organized data is the backbone of every successful business operation. At InfoNav, we understand how vital reliable data entry services are to maintaining the integrity and accessibility of your information.",
   },
   {
     icon: FaChartLine,
