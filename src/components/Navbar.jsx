@@ -53,7 +53,7 @@ const Navbar = () => {
                       </Link>
                     </h5>
                     <ul className="space-y-2 pl-2">
-                      <li><Link to="/services/b2b-leads" className="text-white hover:text-brandOrange transition">B2B Leads</Link></li>
+                      <li><Link to="/services/B2BLeadGeneration" className="text-white hover:text-brandOrange transition">B2B Leads</Link></li>
                       <li><Link to="/services/email-list" className="text-white hover:text-brandOrange transition">Contact Email List Building</Link></li>
                       <li><Link to="/services/linkedin-leads" className="text-white hover:text-brandOrange transition">LinkedIn List Building</Link></li>
                       <li><Link to="/services/targeted-leads" className="text-white hover:text-brandOrange transition">Email Marketing</Link></li>
