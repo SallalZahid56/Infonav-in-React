@@ -37,7 +37,7 @@ const Navbar = () => {
 
             {dropdownOpen && (
               <div
-                className="absolute top-full left-[-200px]  bg-[#1f1f1f] shadow-lg rounded-lg w-[900px] py-6 px-8 z-50"
+                className="absolute top-full left-[-200px]  bg-[#282727] shadow-lg rounded-lg w-[900px] py-6 px-8 z-50"
               >
                 <h4 className="text-white font-bold mb-4 text-lg">
                   Our Services
