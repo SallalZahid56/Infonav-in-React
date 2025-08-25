@@ -16,6 +16,7 @@ import AboutUs from "./pages/AboutUs"; // we'll create this in pages folder
 import ServicesPage from "./pages/ServicesPage";
 import LeadGeneration from "./pages/LeadGeneration"; // ✅ Add this import
 import B2BLeadGeneration from "./pages/B2BLeadGeneration"; // ✅ Add this import
+import EmailListBuilding from "./pages/EmailListBuilding"
 
 
 
@@ -51,6 +52,7 @@ function App() {
         <Route path="/services/lead-generation" element={<LeadGeneration />} />
 
         <Route path="/services/B2BLeadGeneration" element={<B2BLeadGeneration />} />
+        <Route path="/services/EmailListBuilding" element={<EmailListBuilding />} />
       </Routes>
 
       {/* Footer always visible */}
