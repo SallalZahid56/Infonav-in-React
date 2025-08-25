@@ -1,418 +1,523 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { motion } from "framer-motion";
 import {
-  FiTarget,
-  FiCheckCircle,
-  FiZap,
-  FiTrendingUp,
-  FiShield,
-  FiLayers,
-  FiGlobe,
-  FiUsers,
-  FiChevronDown,
-  FiMail,
-  FiBarChart
-} from "react-icons/fi";
+    CheckCircle,
+    Mail,
+    Users,
+    Sparkles,
+    Globe2,
+    Rocket,
+    ChevronDown,
+    ShieldCheck,
+    Target,
+    Database,
+    Download,
+    PhoneCall,
+    Building2,
+    LineChart,
+    Zap,
+    Send,
+} from "lucide-react";
 
+// --- Small UI helpers ---
+const Section = ({ id, children, className = "" }) => (
+    <section id={id} className={`relative w-full py-16 md:py-24 ${className}`}>
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            {children}
+        </div>
+    </section>
+);
 
-const faqs = [
-    {
-        q: "What is the difference between B2B and B2C leads?",
-        a: "B2B leads are businesses or professionals, involving longer decision cycles and multiple stakeholders. B2C leads are individuals, and the buying process is faster and emotionally driven.",
-    },
-    {
-        q: "How can I build a high-quality email list?",
-        a: "Use lead magnets like free eBooks, webinars, or reports. Avoid buying random lists; instead, collect opt-in contacts from your target audience.",
-    },
-    {
-        q: "What’s the best platform for managing leads?",
-        a: "HubSpot, Salesforce, and Zoho CRM are excellent for tracking, follow-ups, and automation.",
-    },
-    {
-        q: "Are cold leads worth pursuing?",
-        a: "Yes — with personalized outreach and follow-ups, many cold leads convert into paying customers.",
-    },
-    {
-        q: "How long does it take to see results from lead generation?",
-        a: "Paid campaigns can work in weeks, while SEO strategies may take 3–6 months.",
-    },
-    {
-        q: "Do you offer custom lead generation services?",
-        a: "Yes, our leads are tailored to your industry, audience, and goals.",
-    },
-    {
-        q: "Can influencer marketing generate B2B leads?",
-        a: "Absolutely — niche industry influencers can create high-quality inbound opportunities.",
-    },
-    {
-        q: "Is email marketing still effective in 2025?",
-        a: "Yes — with segmentation and automation, it offers one of the highest ROIs in digital marketing.",
-    },
-    {
-        q: "Do you provide international B2B leads?",
-        a: "Yes, we source verified global contacts across multiple countries.",
-    },
-    {
-        q: "How do you verify your leads?",
-        a: "We use multi-step verification with tools like Hunter.io, NeverBounce, and manual checks.",
-    },
-];
+const Pill = ({ children }) => (
+    <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm md:text-base font-medium backdrop-blur-sm">
+        <Sparkles className="h-3.5 w-3.5" /> {children}
+    </span>
+);
 
-export default function LeadGeneration() {
-    const [open, setOpen] = useState(null);
+const Card = ({ children, className = "" }) => (
+    <div
+        className={`group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-xl ${className}`}
+    >
+        {children}
+    </div>
+);
 
-    const stats = [
-        { icon: <FiUsers size={18} />, label: "Clients", value: "1,000+" },
-        { icon: <FiTrendingUp size={18} />, label: "Growth", value: "15+ Yrs" },
-        { icon: <FiMail size={18} />, label: "Emails Verified", value: "5M+" },
-        { icon: <FiGlobe size={18} />, label: "Countries", value: "50+" },
-        { icon: <FiCheckCircle size={18} />, label: "Accuracy", value: "98%" },
-        { icon: <FiBarChart size={18} />, label: "ROI Increase", value: "3x" },
-    ];
+const Feature = ({ icon: Icon, title, children }) => (
+    <Card className="h-full">
+        <div className="flex items-start gap-4">
+            {/* Icon with brandOrange background */}
+            <div className="rounded-xl bg-brandOrange p-3 text-white shadow ring-4 ring-orange-100/50">
+                <Icon className="h-6 w-6" />
+            </div>
+            <div>
+                <h4 className="text-lg font-semibold font-heading text-black">
+                    {title}
+                </h4>
+                <p className="mt-2 text-black font-sans">{children}</p>
+            </div>
+        </div>
+    </Card>
+);
 
+const FAQ = ({ q, a }) => (
+    <details className="group rounded-xl border border-slate-200 bg-white p-5 transition-all open:shadow-md">
+        <summary className="flex cursor-pointer list-none items-center justify-between text-left text-base font-semibold text-black font-heading">
+            <span>{q}</span>
+            <ChevronDown className="h-5 w-5 transition-transform duration-300 group-open:rotate-180" />
+        </summary>
+        <p className="mt-3 text-black font-sans">{a}</p>
+    </details>
+);
+
+// --- Main Page ---
+export default function LeadGenerationPage() {
     return (
-        <div className="pt-24 bg-white text-gray-900">
+        <div className="min-h-screen bg-white text-black font-sans">
             {/* HERO */}
-            <section className="relative overflow-hidden p-6 md:p-10 lg:p-12">
-                <div className="absolute inset-0 bg-gradient-to-br from-brandOrange/10 via-orange-200/30 to-white" />
-                <div className="container mx-auto px-6 py-16 relative">
-                    <div className="grid lg:grid-cols-2 gap-10 items-center">
-                        {/* Left Content */}
-                        <div>
-                            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-                                Premium <span className="text-brandOrange">B2B Lead Generation</span> Services to Scale Your Business
-                            </h1>
-                            <p className="mt-4 text-lg text-gray-700">
-                                At Info Navigators, we identify high-value prospects, build meaningful connections,
-                                and turn them into long-term customers. 15+ years, 1,000+ clients, and millions of verified leads delivered.
-                            </p>
-                            <div className="mt-8 flex flex-wrap gap-4">
-                                <Link
-                                    to="/contact"
-                                    className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition"
-                                >
-                                    Book a Free Consultation
-                                </Link>
-                                <a
-                                    href="#services"
-                                    className="px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition"
-                                >
-                                    Explore Services
-                                </a>
-                            </div>
-                            <div className="mt-6 flex gap-6 text-sm text-gray-600">
-                                <div className="flex items-center gap-2"><FiUsers /> 1,000+ Clients</div>
-                                <div className="flex items-center gap-2"><FiCheckCircle /> 15+ Years</div>
-                                <div className="flex items-center gap-2"><FiTrendingUp /> Millions of Leads</div>
-                            </div>
-                        </div>
+            <Section id="hero" className="pt-20 sm:pt-16 pb-12 md:pt-24 md:pb-16 bg-white text-black">
+                <div className="relative px-4 sm:px-6 lg:px-8">
+                    <motion.div
+                        initial={{ opacity: 0, y: 14 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className="mx-auto max-w-3xl text-center"
+                    >
+                        <Pill className="text-xs sm:text-sm">B2B, Email Lists, Influencer Research & Cold Outreach – Done Right</Pill>
 
-                        {/* Right Visual: KPI Dashboard */}
-                        <div className="relative">
-                            <div className="aspect-video rounded-2xl bg-white shadow-xl ring-1 ring-black/5 p-6">
-                                <div className="h-full w-full rounded-xl bg-gradient-to-br from-black via-gray-800 to-gray-900 flex items-center justify-center">
-                                    <div className="grid grid-cols-3 gap-4 w-full max-w-md">
-                                        {stats.map((item, i) => (
-                                            <div
-                                                key={i}
-                                                className="h-24 flex flex-col items-center justify-center rounded-lg bg-white/10 backdrop-blur border border-white/10 text-white transition transform hover:scale-105 hover:bg-brandOrange hover:border-brandOrange/50 shadow-lg hover:shadow-xl"
-                                            >
-                                                <div className="text-white mb-1">{item.icon}</div>
-                                                <span className="text-lg font-bold">{item.value}</span>
-                                                <span className="text-xs">{item.label}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow p-4 ring-1 ring-black/5">
-                                <div className="flex items-center gap-3">
-                                    <FiCheckCircle className="text-brandOrange text-xl" />
-                                    <div className="text-sm">
-                                        <div className="font-semibold">Verified Leads</div>
-                                        <div className="text-gray-600">Lower bounce, higher ROI</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* WHY TRUST US */}
-            <section className="container mx-auto p-6 md:p-10 lg:p-12">
-                <h2 className="text-3xl font-bold text-center mb-10">Why Businesses Trust Info Navigators</h2>
-                <div className="grid md:grid-cols-3 gap-6">
-                    {[
-                        {
-                            icon: <FiTarget />,
-                            title: "Category-Specific",
-                            desc: "Matched to your industry & ICP for relevance and fit.",
-                        },
-                        {
-                            icon: <FiShield />,
-                            title: "Verified",
-                            desc: "Multi-step validation reduces bounce rates & wasted outreach.",
-                        },
-                        {
-                            icon: <FiZap />,
-                            title: "Ready-to-Use",
-                            desc: "Delivered in your format for instant CRM import.",
-                        },
-                    ].map((c, i) => (
-                        <div
-                            key={i}
-                            className="rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition"
-                        >
-                            <div className="text-3xl text-brandOrange">{c.icon}</div>
-                            <h3 className="mt-3 font-semibold text-xl">{c.title}</h3>
-                            <p className="mt-2 text-gray-600">{c.desc}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
+                        <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight font-heading leading-tight">
+                            <span className="text-black">B2B Lead </span>
+                            <span className="text-brandOrange">Generation Services</span>
+                        </h1>
 
-            {/* WHAT IS B2B LEAD GEN */}
-            <section className="bg-gray-50 p-6 md:p-10 lg:p-12">
-                <div className="container mx-auto px-6 py-14 grid lg:grid-cols-2 gap-10 items-center">
-                    <div>
-                        <h2 className="text-3xl font-bold mb-4">What Is B2B Lead Generation (and how it differs from B2C)</h2>
-                        <p className="text-gray-700">
-                            B2B lead generation identifies and attracts decision-makers likely to purchase your products/services.
-                            B2B cycles are longer, involve multiple stakeholders, and require a relationship-driven approach.
+                        <p className="mx-auto mt-4 max-w-xl sm:max-w-2xl text-sm sm:text-base md:text-lg text-black font-sans leading-relaxed">
+                            With 15 years of experience and 1,000+ satisfied clients, Info Navigators is your trusted partner for accurate, targeted B2B leads that help small businesses connect with their ideal prospects. We don’t just gather random contacts — we deliver category-specific, verified leads so you can focus on outreach, marketing, and closing sales without wasting time searching.
                         </p>
-                        <ul className="mt-6 space-y-3 text-gray-700">
-                            <li className="flex items-start gap-3"><FiLayers className="mt-1 text-brandOrange" /> <span><b>Sales Cycle</b> — Longer due to approvals.</span></li>
-                            <li className="flex items-start gap-3"><FiTrendingUp className="mt-1 text-brandOrange" /> <span><b>Deal Size</b> — Higher average contract values.</span></li>
-                            <li className="flex items-start gap-3"><FiCheckCircle className="mt-1 text-brandOrange" /> <span><b>Approach</b> — Value and ROI-focused messaging.</span></li>
-                        </ul>
-                    </div>
-                    <div className="aspect-video rounded-2xl bg-white shadow-xl ring-1 ring-black/5 p-6">
-                        <div className="h-full w-full rounded-xl bg-gradient-to-tr from-brandOrange/20 to-white grid place-items-center">
-                            <div className="flex gap-6">
-                                <div className="w-36 h-36 rounded-xl bg-black/80" />
-                                <div className="w-36 h-36 rounded-xl bg-black/60" />
-                            </div>
+
+                        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                            <a
+                                href="#cta"
+                                className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full bg-brandOrange px-6 py-3 font-heading font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-black text-sm sm:text-base"
+                            >
+                                <Send className="h-5 w-5" /> Get Free Sample Leads
+                            </a>
+                            <a
+                                href="#cta"
+                                className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 font-heading font-semibold text-black shadow-sm transition hover:-translate-y-0.5 hover:bg-gray-100 text-sm sm:text-base"
+                            >
+                                <PhoneCall className="h-5 w-5" /> Book a Call
+                            </a>
                         </div>
+                    </motion.div>
+
+                    {/* Stats */}
+                    <div className="mx-auto mt-10 sm:mt-14 grid grid-cols-2 gap-3 sm:grid-cols-4 max-w-xl sm:max-w-5xl font-heading">
+                        {[
+                            { k: "+15", v: "Years Experience" },
+                            { k: "1,000+", v: "Clients Served" },
+                            { k: "98%", v: "Data Accuracy" },
+                            { k: "24-72h", v: "Fast Delivery" },
+                        ].map((s) => (
+                            <Card
+                                key={s.v}
+                                className="text-center bg-white text-black border border-gray-200 p-4 rounded-lg shadow-sm"
+                            >
+                                <div className="text-xl sm:text-2xl font-extrabold">{s.k}</div>
+                                <div className="mt-1 text-xs sm:text-sm text-black">{s.v}</div>
+                            </Card>
+                        ))}
                     </div>
                 </div>
-            </section>
+            </Section>
 
-            {/* SERVICES WE OFFER */}
-            <section id="services" className="container mx-auto p-6 md:p-10 lg:p-12">
-                <h2 className="text-3xl font-bold text-center mb-10">The B2B Lead Generation Services We Offer</h2>
-                <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
-                    {[
-                        {
-                            title: "B2B Manufacturing Marketing Leads",
-                            desc: "Connect with suppliers, distributors, and buyers globally.",
-                        },
-                        {
-                            title: "B2B Email Marketing Lists",
-                            desc: "Verified, up-to-date contacts for outreach.",
-                        },
-                        {
-                            title: "B2B SaaS Lead Generation",
-                            desc: "Target CTOs, CMOs, and decision makers in tech.",
-                        },
-                        {
-                            title: "B2B Energy Leads",
-                            desc: "Reach corporate energy buyers and utility providers.",
-                        },
-                        {
-                            title: "B2B Wholesale Leads",
-                            desc: "Bulk buyers, distributors, and e-commerce sellers.",
-                        },
-                        {
-                            title: "International B2B Marketing Leads",
-                            desc: "Expand into new markets with localized contacts.",
-                        },
-                    ].map((s, i) => (
-                        <div
-                            key={i}
-                            className="rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition group"
-                        >
-                            <div className="h-10 w-10 grid place-items-center rounded-lg bg-brandOrange/10 text-brandOrange">
-                                <FiTarget />
-                            </div>
-                            <h3 className="mt-4 font-semibold text-lg group-hover:text-brandOrange">{s.title}</h3>
-                            <p className="mt-2 text-gray-600">{s.desc}</p>
+            {/* WHAT WE DO */}
+            <Section id="what-we-do" className="py-16">
+                <div className="grid items-start gap-10 grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+                    {/* Left Content */}
+                    <div className="px-4 sm:px-6 md:px-0">
+                        <h2 className="text-center md:text-left text-3xl md:text-4xl font-bold font-heading text-black">
+                            What We Do
+                        </h2>
+
+                        <p className="mt-4 text-base sm:text-lg text-black text-center md:text-left font-sans leading-relaxed">
+                            Our role is simple but powerful: find the right leads for your business needs. Whether you’re looking for
+                            <span className="text-brandOrange font-semibold"> local customers</span>,
+                            <span className="text-brandOrange font-semibold"> industry-specific decision-makers</span>,
+                            or
+                            <span className="text-brandOrange font-semibold"> niche market opportunities</span>,
+                            we provide clean, ready-to-use lead lists tailored to your goals.
+                        </p>
+
+                        {/* Features Grid - full width on tablets */}
+                        <div className="mt-6 grid grid-cols-1 gap-4">
+                            <Feature icon={Target} title="Targeted Lists">
+                                <p className="break-words">Category-specific, verified prospects tailored to your ICP.</p>
+                            </Feature>
+                            <Feature icon={Database} title="Clean Data">
+                                <p className="break-words">Accurate enrichment, validation, and deduping.</p>
+                            </Feature>
+                            <Feature icon={ShieldCheck} title="Verified Contacts">
+                                <p className="break-words">Lower bounce, higher response.</p>
+                            </Feature>
+                            <Feature icon={Rocket} title="Faster Outreach">
+                                <p className="break-words">Spend less time searching, more time selling.</p>
+                            </Feature>
                         </div>
+                    </div>
+
+                    {/* Right Card */}
+                    <Card className="bg-white text-black font-heading mt-6 md:mt-6 lg:mt-0">
+                        <div className="aspect-[16/10] w-full overflow-hidden rounded-xl bg-gradient-to-br from-brandOrange/20 via-brandOrange/10 to-transparent p-6">
+                            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-3 text-[10px] sm:text-xs md:text-xs lg:text-sm">
+                                {Array.from({ length: 25 }).map((_, i) => (
+                                    <div
+                                        key={i}
+                                        className="flex flex-col items-center justify-between rounded-lg border border-gray-200 bg-white px-2 py-2 text-center text-black shadow-sm break-words w-full"
+                                    >
+                                        <span className="truncate">Lead #{i + 1}</span>
+                                        <Mail className="h-3.5 w-3.5 text-brandOrange shrink-0 mt-1" />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </Card>
+                </div>
+            </Section>
+
+            {/* ABOUT */}
+            <Section id="about" className="bg-white">
+                <h2 className="text-center text-3xl md:text-4xl font-bold font-heading text-black mb-10">
+                    About Info Navigators Lead Generation
+                </h2>
+
+                <div className="grid grid-cols-1 gap-10">
+                    {/* Left Column */}
+                    <div className="px-4 sm:px-6 md:px-0">
+                        <p className="text-black text-base sm:text-lg leading-relaxed font-sans">
+                            As a trusted B2B lead generation company, we’ve helped businesses across industries achieve predictable growth by delivering targeted leads that match their exact customer profile.
+                        </p>
+
+                        <ul className="mt-6 space-y-3 text-black">
+                            {["Deep market research", "Advanced B2B platforms", "Proven outreach strategies"].map((item) => (
+                                <li key={item} className="flex items-start gap-3">
+                                    <CheckCircle className="mt-0.5 h-5 w-5 text-brandOrange" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+
+                        <p className="mt-6 text-black text-base sm:text-lg">
+                            The result? Your sales team spends less time searching for prospects and more time engaging with qualified opportunities. From startups to enterprises, we deliver the data, strategy, and expertise to keep your sales funnel full.
+                        </p>
+                    </div>
+
+                    {/* Right Column: Card with Features */}
+                    <Card className="bg-white text-black shadow-md px-4 sm:px-6 md:px-0 mt-6">
+                        <div className="grid grid-cols-1 gap-4">
+                            <Feature icon={LineChart} title="Predictable Growth">Steady pipeline you can forecast.</Feature>
+                            <Feature icon={Users} title="ICP Precision">Match your exact buyer profile.</Feature>
+                            <Feature icon={Zap} title="Speed & Scale">From small pilots to enterprise volumes.</Feature>
+                            <Feature icon={Building2} title="Across Industries">Tech, Manufacturing, Energy & more.</Feature>
+                        </div>
+                    </Card>
+                </div>
+            </Section>
+
+            {/* WHY LEAD GEN */}
+            <Section id="why">
+                <div className="mx-auto max-w-3xl text-center">
+                    <h2 className="text-2xl md:text-3xl font-bold font-heading">
+                        Why Lead Generation is Vital for Business Growth
+                    </h2>
+                    <p className="mt-4 text-black">
+                        Without a steady influx of marketing leads, even the most skilled sales team can fall short of targets. Lead generation acts as the fuel for your sales pipeline attracting the right audience, nurturing them, and moving them toward a buying decision to safeguard revenue and create sustainable growth.
+                    </p>
+                </div>
+            </Section>
+
+            {/* TOOLS */}
+            <Section id="tools" className="bg-white py-16">
+                <h2 className="text-center text-3xl md:text-4xl font-bold text-black font-heading">
+                    Tools & Technology We Use
+                </h2>
+
+                <p className="mt-4 text-center max-w-3xl mx-auto text-black">
+                    We use advanced industry-leading tools to ensure your campaigns are precise, efficient, and scalable. Our stack powers enrichment, verification, and optimization.
+                </p>
+
+                <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {[
+                        { t: "Apollo.io", d: "Prospect data scraping, enrichment, intent targeting" },
+                        { t: "Contact-Out", d: "Prospecting companion for contact details" },
+                        { t: "Clay", d: "Data orchestration & enrichment workflows" },
+                        { t: "Hunter.io", d: "Professional email finding & verification" },
+                        { t: "LinkedIn Sales Navigator", d: "Advanced filtering for B2B contacts" },
+                        { t: "Instapage", d: "Conversion-focused landing pages" },
+                        { t: "Mailchimp", d: "Email automation & segmentation" },
+                        { t: "Facebook Ads Manager", d: "Targeted B2C audience outreach" },
+                    ].map((tool) => (
+                        <Card
+                            key={tool.t}
+                            className="relative overflow-hidden bg-white text-black shadow-md border border-slate-200 rounded-xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                        >
+                            <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-brandOrange/20" />
+                            <h4 className="text-lg font-semibold">{tool.t}</h4>
+                            <p className="mt-2 text-sm text-black">{tool.d}</p>
+                        </Card>
                     ))}
                 </div>
-            </section>
+
+                <p className="mt-8 text-center text-black max-w-3xl mx-auto">
+                    By combining these tools, we collect, verify, and organize lead data for maximum campaign success.
+                </p>
+            </Section>
+
+            {/* WHY US */}
+            <Section id="why-us">
+                <h2 className="text-2xl md:text-3xl font-bold text-center font-heading">
+                    Why Our B2B Lead Generation Service Stands Out
+                </h2>
+                <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {[
+                        "15+ Years in B2B Market Research",
+                        "Category-Specific Targeting – Local, national, or international",
+                        "Verified & Clean Contact Information",
+                        "Flexible Delivery Formats – CSV, Excel, Google Sheets",
+                        "Trusted by SMEs Worldwide",
+                    ].map((txt) => (
+                        <Card key={txt}>
+                            <div className="flex items-start gap-3">
+                                <CheckCircle className="mt-0.5 h-5 w-5 text-brandOrange" /> <p>{txt}</p>
+                            </div>
+                        </Card>
+                    ))}
+                </div>
+            </Section>
+
+            {/* LEAD TYPES */}
+            <Section id="leads" className="bg-white">
+                <h2 className="text-2xl md:text-3xl font-bold text-center font-heading">
+                    Types of Leads We Provide
+                </h2>
+                <p className="mt-3 text-lg sm:text-xl text-black text-center font-sans">
+                    We source leads for almost every B2B platform or sales requirement.
+                </p>
+                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {[
+                        { t: "B2B Manufacturing Marketing Leads", d: "Connect with manufacturers, suppliers, and distributors worldwide." },
+                        { t: "B2B Email Marketing Lists", d: "Verified, up-to-date email lists to reduce bounce rates." },
+                        { t: "B2B SaaS Lead Generation", d: "Reach CTOs, PMs, and procurement heads in software companies." },
+                        { t: "B2B Energy Leads", d: "Connect with energy suppliers, distributors, and buyers." },
+                        { t: "B2B Wholesale Websites Leads", d: "Identify bulk buyers, distributors, and marketplace sellers." },
+                        { t: "Targeted B2B Lead Generation", d: "Custom lists by niche, location, and audience profile." },
+                        { t: "International B2B Marketing Leads", d: "Expand globally with verified leads across countries." },
+                    ].map((x) => (
+                        <Card key={x.t}>
+                            <h4 className="text-lg font-semibold">{x.t}</h4>
+                            <p className="mt-2 text-black">{x.d}</p>
+                        </Card>
+                    ))}
+                </div>
+            </Section>
 
             {/* PROCESS */}
-            <section className="bg-gray-50 p-6 md:p-10 lg:p-12">
-                <div className="container mx-auto px-6 py-14">
-                    <h2 className="text-3xl font-bold text-center mb-10">Our Proven B2B Lead Generation Process</h2>
-                    <div className="grid md:grid-cols-4 gap-6">
+            <Section id="process">
+                <h2 className="text-2xl md:text-3xl font-bold font-heading text-center">
+                    Our B2B Lead Generation Process
+                </h2>
+                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    {[
+                        { t: "Requirement Analysis", d: "Define your target market & criteria" },
+                        { t: "Data Research", d: "Use trusted B2B sites & manual search" },
+                        { t: "Lead Verification", d: "Confirm email, phone, job title accuracy" },
+                        { t: "Database Delivery", d: "Ready-to-use lists in your preferred format" },
+                    ].map((s, i) => (
+                        <Card key={s.t}>
+                            <div className="mb-2 text-sm font-semibold text-brandOrange">
+                                Step {i + 1}
+                            </div>
+                            <h4 className="text-lg font-semibold">{s.t}</h4>
+                            <p className="mt-2 text-black">{s.d}</p>
+                        </Card>
+                    ))}
+                </div>
+            </Section>
+
+            {/* DATA FIELDS */}
+            <Section id="data" className="bg-white text-black">
+                <h2 className="text-2xl md:text-3xl font-bold text-center font-heading">
+                    B2B Data We Provide
+                </h2>
+
+                <div className="mt-6">
+                    {/* Centered, equal-width cards; no odd margins on mobile */}
+                    <div className="grid justify-items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                         {[
-                            {
-                                step: "Step 1",
-                                title: "Requirement Analysis",
-                                desc: "Define ICP: industry, location, job title, size, and buying behavior.",
-                            },
-                            {
-                                step: "Step 2",
-                                title: "Data Research",
-                                desc: "Trusted platforms + manual prospecting for accuracy.",
-                            },
-                            {
-                                step: "Step 3",
-                                title: "Lead Verification",
-                                desc: "Hunter.io, NeverBounce, and manual checks.",
-                            },
-                            {
-                                step: "Step 4",
-                                title: "Delivery",
-                                desc: "CSV, Excel, or Google Sheets — ready to import.",
-                            },
-                        ].map((p, i) => (
-                            <div key={i} className="relative rounded-2xl bg-white border border-gray-200 p-6">
-                                <div className="absolute -top-3 left-6 bg-brandOrange text-white text-xs font-bold px-3 py-1 rounded-full">
-                                    {p.step}
-                                </div>
-                                <h3 className="mt-3 font-semibold text-lg">{p.title}</h3>
-                                <p className="mt-2 text-gray-600">{p.desc}</p>
+                            "Business Name & Category",
+                            "Contact Person & Job Title",
+                            "Verified Email Address",
+                            "Phone Number (if available)",
+                            "Website & Location",
+                        ].map((f) => (
+                            <div
+                                key={f}
+                                className="w-full max-w-[12rem] rounded-xl border border-slate-200 px-4 py-3 text-sm shadow-sm text-center"
+                            >
+                                <span className="block truncate">{f}</span>
                             </div>
                         ))}
                     </div>
                 </div>
-            </section>
+            </Section>
 
-            {/* TOOLS & INDUSTRIES */}
-            <section className="container mx-auto p-6 md:p-10 lg:p-12">
-                <div className="grid lg:grid-cols-2 gap-10">
-                    <div>
-                        <h2 className="text-3xl font-bold mb-6">Tools & Technology We Use</h2>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                            {[
-                                "Apollo.io",
-                                "Hunter.io",
-                                "LinkedIn Sales Navigator",
-                                "Clay",
-                                "Mailchimp",
-                                "Instapage",
-                            ].map((t) => (
-                                <div key={t} className="rounded-xl border border-gray-200 p-4 text-center hover:shadow-md transition">
-                                    <div className="mx-auto mb-2 text-brandOrange text-xl"><FiGlobe /></div>
-                                    <div className="text-sm font-semibold">{t}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    <div>
-                        <h2 className="text-3xl font-bold mb-6">Industries We Serve</h2>
-                        <div className="flex flex-wrap gap-3">
-                            {[
-                                "SaaS & Tech",
-                                "Manufacturing & Industrial",
-                                "Wholesale & Distribution",
-                                "Energy & Utilities",
-                                "Local & Niche Services",
-                            ].map((i) => (
-                                <span
-                                    key={i}
-                                    className="px-4 py-2 rounded-full border border-gray-300 hover:border-brandOrange hover:text-brandOrange transition"
-                                >
-                                    {i}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
+            {/* USE CASES */}
+            <Section id="use-cases" className="bg-white">
+                <h2 className="text-2xl md:text-3xl font-bold font-heading text-center">
+                    Best Use Cases for Our Leads
+                </h2>
+                <div className="mt-6 flex flex-wrap justify-center gap-3">
+                    {[
+                        "Email Marketing B2B Lead Generation campaigns",
+                        "LinkedIn B2B Marketing Strategies & outreach",
+                        "B2B Cold Calling & Telemarketing",
+                        "B2B Digital Advertising",
+                        "B2B Demand Generation initiatives",
+                    ].map((t) => (
+                        <span
+                            key={t}
+                            className="rounded-full border border-slate-300 bg-black px-4 py-2 text-sm text-white"
+                        >
+                            {t}
+                        </span>
+                    ))}
                 </div>
-            </section>
+            </Section>
 
-            {/* WHY OUR LEADS */}
-            <section className="bg-gray-50 p-6 md:p-10 lg:p-12">
-                <div className="container mx-auto px-6 py-14">
-                    <h2 className="text-3xl font-bold text-center mb-8">Why Our B2B Leads Deliver Better ROI</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {[
-                            "High Accuracy — multi-step verification.",
-                            "Targeted Audience — no generic lists.",
-                            "Scalable — from 500 to 50,000+.",
-                            "Global Reach — 50+ countries.",
-                        ].map((point, i) => (
-                            <div key={i} className="rounded-2xl border border-gray-200 p-6 flex items-start gap-3">
-                                <FiCheckCircle className="text-brandOrange mt-1" />
-                                <span className="text-gray-700">{point}</span>
+            {/* INDUSTRIES */}
+            <Section id="industries">
+                <h2 className="text-2xl md:text-3xl font-bold font-heading text-center">
+                    Industries We Serve
+                </h2>
+                <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {[
+                        { t: "IT & SaaS", d: "B2B SaaS SEO, B2B sales examples" },
+                        { t: "Manufacturing", d: "B2B manufacturing marketing strategy" },
+                        { t: "Wholesale & Export", d: "Best B2B platform for export business" },
+                        { t: "Energy", d: "B2B energy leads" },
+                        { t: "Local Services", d: "SMEs, niche markets" },
+                    ].map((i) => (
+                        <Card key={i.t}>
+                            <h4 className="text-lg font-semibold">{i.t}</h4>
+                            <p className="mt-2 text-black">{i.d}</p>
+                        </Card>
+                    ))}
+                </div>
+            </Section>
+
+            {/* WHY SMALL BUSINESSES LOVE US */}
+            <Section id="smb-love" className="bg-white">
+                <h2 className="text-2xl md:text-3xl font-bold text-center font-heading">
+                    Why Small Businesses Love Our Service
+                </h2>
+                <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    {[
+                        "Free Sample B2B Leads before commitment",
+                        "Unlimited B2B Leads packages",
+                        "Fast Delivery for urgent projects",
+                        "Access to best B2B websites & top companies for sourcing data",
+                    ].map((txt) => (
+                        <Card key={txt}>
+                            <div className="flex items-start gap-3">
+                                <CheckCircle className="mt-0.5 h-5 w-5 text-indigo-600" />{" "}
+                                <p>{txt}</p>
                             </div>
-                        ))}
-                    </div>
+                        </Card>
+                    ))}
                 </div>
-            </section>
+            </Section>
 
             {/* CASE STUDIES */}
-            <section className="container mx-auto p-6 md:p-10 lg:p-12">
-                <h2 className="text-3xl font-bold text-center mb-10">Case Studies — Proof of Success</h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                    <div className="rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition">
-                        <div className="text-sm font-semibold text-brandOrange">SaaS Startup</div>
-                        <h3 className="mt-1 font-bold text-xl">27% Response & 120 New Clients</h3>
-                        <p className="mt-3 text-gray-600">
-                            A US-based SaaS provider used our B2B SaaS database to achieve a 27% response rate and onboard 120 new clients in 60 days.
-                        </p>
-                    </div>
-                    <div className="rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition">
-                        <div className="text-sm font-semibold text-brandOrange">Manufacturing Supplier</div>
-                        <h3 className="mt-1 font-bold text-xl">$120K in Orders in 3 Months</h3>
-                        <p className="mt-3 text-gray-600">
-                            A parts supplier in the Middle East generated $120K in orders within 3 months using our B2B wholesale leads.
-                        </p>
-                    </div>
+            <Section id="case-studies">
+                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+                    <h2 className="text-2xl md:text-3xl font-bold font-heading text-center md:text-left">
+                        Case Studies – Our Clients’ Success
+                    </h2>
+                    <a
+                        href="#"
+                        className="hidden rounded-full border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 md:inline"
+                    >
+                        Download PDF <Download className="ml-2 inline h-4 w-4" />
+                    </a>
                 </div>
-            </section>
+                <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+                    <Card>
+                        <h4 className="text-lg font-semibold font-heading">Case Study 1: SaaS Startup</h4>
+                        <p className="mt-2 text-black font-sans">
+                            A small SaaS provider needed to target US-based mid-sized businesses. We delivered a verified B2B SaaS lead generation database with 5,000 qualified contacts, resulting in a{" "}
+                            <span className="font-semibold text-slate-900">27% email response rate</span> within 60 days.
+                        </p>
+                    </Card>
+                    <Card>
+                        <h4 className="text-lg font-semibold font-heading">Case Study 2: Manufacturing Supplier</h4>
+                        <p className="mt-2 text-black font-sans">
+                            We helped a manufacturing parts supplier connect with bulk buyers in the Middle East, generating{" "}
+                            <span className="font-semibold text-slate-900">$120K in new orders</span> within the first quarter.
+                        </p>
+                    </Card>
+                </div>
+            </Section>
 
             {/* FAQ */}
-            <section className="bg-gray-50 p-6 md:p-10 lg:p-12">
-                <div className="container mx-auto px-6 py-14">
-                    <h2 className="text-3xl font-bold text-center mb-10">Advanced FAQs for B2B Lead Generation</h2>
-                    <div className="mx-auto max-w-3xl divide-y divide-gray-200 rounded-2xl border border-gray-200 bg-white">
-                        {faqs.map((item, idx) => (
-                            <div key={idx} className="p-5">
-                                <button
-                                    onClick={() => setOpen(open === idx ? null : idx)}
-                                    className="w-full flex items-center justify-between text-left"
-                                >
-                                    <span className="font-semibold">{item.q}</span>
-                                    <FiChevronDown
-                                        className={`transition ${open === idx ? "rotate-180" : ""}`}
-                                    />
-                                </button>
-                                {open === idx && (
-                                    <p className="mt-3 text-gray-700">{item.a}</p>
-                                )}
-                            </div>
-                        ))}
-                    </div>
+            <Section id="faqs" className="bg-white text-black">
+                <h2 className="text-2xl md:text-3xl font-bold text-center font-heading">FAQs</h2>
+                <div className="mt-6 flex flex-col gap-4">
+                    <FAQ
+                        q="What’s the difference between B2B and B2C leads?"
+                        a="B2B leads are business decision-makers, while B2C leads are individual consumers for personal use."
+                    />
+                    <FAQ
+                        q="How can I ensure the leads are high quality?"
+                        a="We use strict data verification and only deliver qualified contacts matching your profile."
+                    />
+                    <FAQ
+                        q="Do you handle both cold and warm leads?"
+                        a="Yes — we provide data for cold outreach and warm lead nurturing."
+                    />
+                    <FAQ
+                        q="How soon will I see results?"
+                        a="Most clients see impact within 30–90 days, depending on industry & campaign type."
+                    />
                 </div>
-            </section>
+            </Section>
 
-            {/* FINAL CTA */}
-            <section className="relative overflow-hidden p-6 md:p-10 lg:p-12">
-                <div className="absolute inset-0 bg-gradient-to-br from-brandOrange via-orange-500 to-black opacity-90" />
-                <div className="container mx-auto px-6 py-16 relative text-white">
-                    <div className="grid lg:grid-cols-2 gap-10 items-center">
-                        <div>
-                            <h2 className="text-3xl md:text-4xl font-extrabold">
-                                Ready to Scale Your Business with Quality B2B Leads?
-                            </h2>
-                            <p className="mt-3 text-orange-100">
-                                Get a custom lead plan, timeline, and quote — tailored to your goals.
-                            </p>
-                        </div>
-                        <div className="flex lg:justify-end">
-                            <Link
-                                to="/contact"
-                                className="bg-white text-black px-6 py-3 rounded-xl font-semibold shadow hover:bg-black hover:text-white transition"
+            {/* CTA */}
+            <Section id="cta">
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-sky-600 to-blue-600 p-8 sm:p-10 text-white shadow-xl">
+                    <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-white/10" />
+                    <div className="pointer-events-none absolute -right-12 -bottom-12 h-48 w-48 rounded-full bg-white/10" />
+                    <div className="mx-auto max-w-3xl text-center">
+                        <h3 className="text-2xl font-bold md:text-3xl">
+                            Ready to Fill Your Sales Pipeline with Verified Leads?
+                        </h3>
+                        <p className="mt-2 text-white/90">
+                            Get a free sample tailored to your ICP, or jump on a quick call to discuss goals.
+                        </p>
+                        <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                            <a
+                                href="#"
+                                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-slate-900 shadow hover:-translate-y-0.5"
                             >
-                                Book a Call
-                            </Link>
+                                <Send className="h-5 w-5" /> Get Free Sample Now
+                            </a>
+                            <a
+                                href="#"
+                                className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white shadow hover:-translate-y-0.5"
+                            >
+                                <PhoneCall className="h-5 w-5" /> Book a Call
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </Section>
         </div>
     );
 }
