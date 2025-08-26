@@ -71,7 +71,7 @@ const Navbar = () => {
                       </Link>
                     </h5>
                     <ul className="space-y-2 pl-2">
-                      <li><Link to="/services/market-research" className="text-white hover:text-brandOrange transition">Market Research</Link></li>
+                      <li><Link to="/services/MarketResearch" className="text-white hover:text-brandOrange transition">Market Research</Link></li>
                       <li><Link to="/services/product-research" className="text-white hover:text-brandOrange transition">Product Research</Link></li>
                       <li><Link to="/services/contact-research" className="text-white hover:text-brandOrange transition">Contact Research</Link></li>
                       <li><Link to="/services/competitor-research" className="text-white hover:text-brandOrange transition">Competitor Research</Link></li>

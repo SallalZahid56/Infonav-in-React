@@ -55,7 +55,7 @@ export default function OnlineResearchServices() {
   return (
     <div className="bg-white text-gray-900 font-sans">
       {/* HERO SECTION */}
-      <section className="relative p-6 md:p-12 flex flex-col lg:flex-row items-center gap-10">
+      <section className="relative p-6 md:p-12 flex flex-col lg:flex-row items-center gap-10 mt-10">
         <div className="lg:w-1/2">
           <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight">
             Professional Online <span className="text-brandOrange">Internet Research Services</span> for Businesses

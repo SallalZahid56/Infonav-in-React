@@ -20,6 +20,7 @@ import EmailListBuilding from "./pages/EmailListBuilding";
 import LinkedInList from "./pages/LinkedInList";
 import EmailMarketing from "./pages/EmailMarketing";
 import InternetResearch from "./pages/InternetResearch";
+import MarketResearch from "./pages/MarketResearch";
 
 
 
@@ -58,6 +59,7 @@ function App() {
         <Route path="/services/LinkedInList" element={<LinkedInList />} />
         <Route path="/services/EmailMarketing" element={<EmailMarketing />} />
         <Route path="/services/InternetResearch" element={<InternetResearch />} />
+        <Route path="/services/MarketResearch" element={<MarketResearch />} />
       </Routes>
 
       {/* Footer always visible */}
