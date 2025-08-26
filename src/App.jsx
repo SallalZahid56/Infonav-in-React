@@ -24,6 +24,7 @@ import MarketResearch from "./pages/MarketResearch";
 import DataVerificationPage from "./pages/DataVerificationPage";
 import InfluencerResearch from "./pages/InfluencerResearch";
 import InstagramInfluencerResearch from "./pages/InstagramInfluencerResearch";
+import YouTubeInfluencerResearch from "./pages/YouTubeInfluencerResearch";
 
 
 
@@ -66,6 +67,8 @@ function App() {
         <Route path="/services/DataVerificationPage" element={<DataVerificationPage />} />
         <Route path="/services/InfluencerResearch" element={<InfluencerResearch />} />
         <Route path="/services/InstagramInfluencerResearch" element={<InstagramInfluencerResearch />} />
+        <Route path="/services/YouTubeInfluencerResearch" element={<YouTubeInfluencerResearch />} />
+
       </Routes>
 
       {/* Footer always visible */}
