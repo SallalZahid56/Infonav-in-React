@@ -22,6 +22,7 @@ import EmailMarketing from "./pages/EmailMarketing";
 import InternetResearch from "./pages/InternetResearch";
 import MarketResearch from "./pages/MarketResearch";
 import DataVerificationPage from "./pages/DataVerificationPage";
+import InfluencerResearch from "./pages/InfluencerResearch";
 
 
 
@@ -62,6 +63,7 @@ function App() {
         <Route path="/services/InternetResearch" element={<InternetResearch />} />
         <Route path="/services/MarketResearch" element={<MarketResearch />} />
         <Route path="/services/DataVerificationPage" element={<DataVerificationPage />} />
+        <Route path="/services/InfluencerResearch" element={<InfluencerResearch />} />
       </Routes>
 
       {/* Footer always visible */}

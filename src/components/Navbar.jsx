@@ -80,7 +80,7 @@ const Navbar = () => {
                   <div>
                     <h5 className="font-semibold mb-2">
                       <Link
-                        to="/services/influencer-research"
+                        to="/services/InfluencerResearch"
                         className="text-brandOrange hover:text-brandOrange transition"
                       >
                         Influencer Research
