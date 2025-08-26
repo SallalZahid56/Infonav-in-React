@@ -25,7 +25,7 @@ import DataVerificationPage from "./pages/DataVerificationPage";
 import InfluencerResearch from "./pages/InfluencerResearch";
 import InstagramInfluencerResearch from "./pages/InstagramInfluencerResearch";
 import YouTubeInfluencerResearch from "./pages/YouTubeInfluencerResearch";
-
+import TiktokInfluencerResearch from "./pages/TiktokInfluencerResearch";
 
 
 function App() {
@@ -68,6 +68,7 @@ function App() {
         <Route path="/services/InfluencerResearch" element={<InfluencerResearch />} />
         <Route path="/services/InstagramInfluencerResearch" element={<InstagramInfluencerResearch />} />
         <Route path="/services/YouTubeInfluencerResearch" element={<YouTubeInfluencerResearch />} />
+        <Route path="/services/TiktokInfluencerResearch" element={<TiktokInfluencerResearch />} />
 
       </Routes>
 

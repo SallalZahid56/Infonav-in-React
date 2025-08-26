@@ -89,8 +89,7 @@ const Navbar = () => {
                     <ul className="space-y-2 pl-2">
                       <li><Link to="/services/YouTubeInfluencerResearch" className="text-white hover:text-brandOrange transition">YouTube Influencers</Link></li>
                       <li><Link to="/services/InstagramInfluencerResearch" className="text-white hover:text-brandOrange transition">Instagram Influencers</Link></li>
-                      <li><Link to="/services/tiktok-influencers" className="text-white hover:text-brandOrange transition">TikTok Influencers</Link></li>
-                      <li><Link to="/services/influencer-outreach" className="text-white hover:text-brandOrange transition">Influencer Outreach</Link></li>
+                      <li><Link to="/services/TiktokInfluencerResearch" className="text-white hover:text-brandOrange transition">TikTok Influencers</Link></li>
                     </ul>
                   </div>
 
