@@ -21,6 +21,7 @@ import LinkedInList from "./pages/LinkedInList";
 import EmailMarketing from "./pages/EmailMarketing";
 import InternetResearch from "./pages/InternetResearch";
 import MarketResearch from "./pages/MarketResearch";
+import DataVerificationPage from "./pages/DataVerificationPage";
 
 
 
@@ -60,6 +61,7 @@ function App() {
         <Route path="/services/EmailMarketing" element={<EmailMarketing />} />
         <Route path="/services/InternetResearch" element={<InternetResearch />} />
         <Route path="/services/MarketResearch" element={<MarketResearch />} />
+        <Route path="/services/DataVerificationPage" element={<DataVerificationPage />} />
       </Routes>
 
       {/* Footer always visible */}
