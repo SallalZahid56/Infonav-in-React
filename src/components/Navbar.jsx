@@ -64,7 +64,7 @@ const Navbar = () => {
                   <div>
                     <h5 className="font-semibold mb-2">
                       <Link
-                        to="/services/internet-research"
+                        to="/services/InternetResearch"
                         className="text-brandOrange hover:text-brandOrange transition"
                       >
                         Internet Research

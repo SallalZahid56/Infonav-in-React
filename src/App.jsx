@@ -19,6 +19,7 @@ import B2BLeadGeneration from "./pages/B2BLeadGeneration"; // ✅ Add this impor
 import EmailListBuilding from "./pages/EmailListBuilding";
 import LinkedInList from "./pages/LinkedInList";
 import EmailMarketing from "./pages/EmailMarketing";
+import InternetResearch from "./pages/InternetResearch";
 
 
 
@@ -56,6 +57,7 @@ function App() {
         <Route path="/services/EmailListBuilding" element={<EmailListBuilding />} />
         <Route path="/services/LinkedInList" element={<LinkedInList />} />
         <Route path="/services/EmailMarketing" element={<EmailMarketing />} />
+        <Route path="/services/InternetResearch" element={<InternetResearch />} />
       </Routes>
 
       {/* Footer always visible */}
