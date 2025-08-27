@@ -72,7 +72,7 @@ const Navbar = () => {
                     </h5>
                     <ul className="space-y-2 pl-2">
                       <li><Link to="/services/MarketResearch" className="text-white hover:text-brandOrange transition">Market Research</Link></li>
-                      <li><Link to="/services/DataVerificationPage" className="text-white hover:text-brandOrange transition">DataVerificationPage</Link></li>
+                      <li><Link to="/services/DataVerificationPage" className="text-white hover:text-brandOrange transition">Data Verification</Link></li>
                     </ul>
                   </div>
 
@@ -121,7 +121,7 @@ const Navbar = () => {
                     </h5>
                     <ul className="space-y-2 pl-2">
                       <li><Link to="/services/WebScrapingPage" className="text-white hover:text-brandOrange transition">Web Scraping</Link></li>
-                      <li><Link to="/services/DataCleaningExtraction" className="text-white hover:text-brandOrange transition">Data Cleaning and Extraction Services</Link></li>
+                      <li><Link to="/services/DataCleaningExtraction" className="text-white hover:text-brandOrange transition">Data Cleaning and Extraction</Link></li>
                     </ul>
                   </div>
 
@@ -129,15 +129,15 @@ const Navbar = () => {
                   <div>
                     <h5 className="font-semibold mb-2">
                       <Link
-                        to="/services/python-scraping"
+                        to="/services/PythonScraping"
                         className="text-brandOrange hover:text-brandOrange transition"
                       >
                         Python Scraping
                       </Link>
                     </h5>
                     <ul className="space-y-2 pl-2">
-                      <li><Link to="/services/custom-scripts" className="text-white hover:text-brandOrange transition">Custom Scripts</Link></li>
-                      <li><Link to="/services/automation" className="text-white hover:text-brandOrange transition">Automation Bots</Link></li>
+                      <li><Link to="/services/PythonWebScraping" className="text-white hover:text-brandOrange transition">Python Web Scraping</Link></li>
+                      <li><Link to="/services/DataCleaningExport" className="text-white hover:text-brandOrange transition">Data Cleaning</Link></li>
                       <li><Link to="/services/data-parsing" className="text-white hover:text-brandOrange transition">Data Parsing</Link></li>
                       <li><Link to="/services/web-automation" className="text-white hover:text-brandOrange transition">Web Automation</Link></li>
                     </ul>

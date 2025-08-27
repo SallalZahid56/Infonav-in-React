@@ -32,6 +32,9 @@ import DataCleaning from "./pages/DataCleaning";
 import DataExtraction from "./pages/DataExtraction";
 import WebScrapingPage from "./pages/WebScrapingPage";
 import DataCleaningExtraction from "./pages/DataCleaningExtraction";
+import PythonScraping from "./pages/PythonScraping";
+import PythonWebScraping from "./pages/PythonWebScraping";
+import DataCleaningExport from "./pages/DataCleaningExport";
 
 
 function App() {
@@ -81,6 +84,9 @@ function App() {
         <Route path="/services/DataExtraction" element={<DataExtraction />} />
         <Route path="/services/WebScrapingPage" element={<WebScrapingPage />} />
         <Route path="/services/DataCleaningExtraction" element={<DataCleaningExtraction />} />
+        <Route path="/services/PythonScraping" element={<PythonScraping />} />
+        <Route path="/services/PythonWebScraping" element={<PythonWebScraping />} />
+        <Route path="/services/DataCleaningExport" element={<DataCleaningExport />} />
       </Routes>
 
       {/* Footer always visible */}
