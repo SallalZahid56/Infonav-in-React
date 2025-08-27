@@ -113,17 +113,15 @@ const Navbar = () => {
                   <div>
                     <h5 className="font-semibold mb-2">
                       <Link
-                        to="/services/data-extraction"
+                        to="/services/DataExtraction"
                         className="text-brandOrange hover:text-brandOrange transition"
                       >
                         Data Extraction
                       </Link>
                     </h5>
                     <ul className="space-y-2 pl-2">
-                      <li><Link to="/services/web-scraping" className="text-white hover:text-brandOrange transition">Web Scraping</Link></li>
-                      <li><Link to="/services/email-extraction" className="text-white hover:text-brandOrange transition">Email Extraction</Link></li>
-                      <li><Link to="/services/phone-number-extraction" className="text-white hover:text-brandOrange transition">Phone Number Extraction</Link></li>
-                      <li><Link to="/services/data-mining" className="text-white hover:text-brandOrange transition">Data Mining</Link></li>
+                      <li><Link to="/services/WebScrapingPage" className="text-white hover:text-brandOrange transition">Web Scraping</Link></li>
+                      <li><Link to="/services/DataCleaningExtraction" className="text-white hover:text-brandOrange transition">Data Cleaning and Extraction Services</Link></li>
                     </ul>
                   </div>
 

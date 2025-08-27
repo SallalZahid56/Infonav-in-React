@@ -29,6 +29,9 @@ import TiktokInfluencerResearch from "./pages/TiktokInfluencerResearch";
 import DataEntry from "./pages/DataEntry";
 import CRMDataEntry from "./pages/CRMDataEntry";
 import DataCleaning from "./pages/DataCleaning";
+import DataExtraction from "./pages/DataExtraction";
+import WebScrapingPage from "./pages/WebScrapingPage";
+import DataCleaningExtraction from "./pages/DataCleaningExtraction";
 
 
 function App() {
@@ -75,6 +78,9 @@ function App() {
         <Route path="/services/DataEntry" element={<DataEntry />} />
         <Route path="/services/CRMDataEntry" element={<CRMDataEntry />} />
         <Route path="/services/DataCleaning" element={<DataCleaning />} />
+        <Route path="/services/DataExtraction" element={<DataExtraction />} />
+        <Route path="/services/WebScrapingPage" element={<WebScrapingPage />} />
+        <Route path="/services/DataCleaningExtraction" element={<DataCleaningExtraction />} />
       </Routes>
 
       {/* Footer always visible */}
