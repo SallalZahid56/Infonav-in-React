@@ -28,6 +28,7 @@ import YouTubeInfluencerResearch from "./pages/YouTubeInfluencerResearch";
 import TiktokInfluencerResearch from "./pages/TiktokInfluencerResearch";
 import DataEntry from "./pages/DataEntry";
 import CRMDataEntry from "./pages/CRMDataEntry";
+import DataCleaning from "./pages/DataCleaning";
 
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
         <Route path="/services/TiktokInfluencerResearch" element={<TiktokInfluencerResearch />} />
         <Route path="/services/DataEntry" element={<DataEntry />} />
         <Route path="/services/CRMDataEntry" element={<CRMDataEntry />} />
+        <Route path="/services/DataCleaning" element={<DataCleaning />} />
       </Routes>
 
       {/* Footer always visible */}

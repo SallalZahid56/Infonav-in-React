@@ -105,9 +105,7 @@ const Navbar = () => {
                     </h5>
                     <ul className="space-y-2 pl-2">
                       <li><Link to="/services/CRMDataEntry" className="text-white hover:text-brandOrange transition">CRM Data Entry</Link></li>
-                      <li><Link to="/services/data-formatting" className="text-white hover:text-brandOrange transition">Data Formatting</Link></li>
-                      <li><Link to="/services/excel-services" className="text-white hover:text-brandOrange transition">Excel Services</Link></li>
-                      <li><Link to="/services/manual-entry" className="text-white hover:text-brandOrange transition">Manual Data Entry</Link></li>
+                      <li><Link to="/services/DataCleaning" className="text-white hover:text-brandOrange transition">Data Cleaning</Link></li>
                     </ul>
                   </div>
 
