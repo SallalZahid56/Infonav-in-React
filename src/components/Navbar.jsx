@@ -97,7 +97,7 @@ const Navbar = () => {
                   <div>
                     <h5 className="font-semibold mb-2">
                       <Link
-                        to="/services/data-entry"
+                        to="/services/DataEntry"
                         className="text-brandOrange hover:text-brandOrange transition"
                       >
                         Data Entry
