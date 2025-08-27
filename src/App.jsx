@@ -27,6 +27,7 @@ import InstagramInfluencerResearch from "./pages/InstagramInfluencerResearch";
 import YouTubeInfluencerResearch from "./pages/YouTubeInfluencerResearch";
 import TiktokInfluencerResearch from "./pages/TiktokInfluencerResearch";
 import DataEntry from "./pages/DataEntry";
+import CRMDataEntry from "./pages/CRMDataEntry";
 
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
         <Route path="/services/YouTubeInfluencerResearch" element={<YouTubeInfluencerResearch />} />
         <Route path="/services/TiktokInfluencerResearch" element={<TiktokInfluencerResearch />} />
         <Route path="/services/DataEntry" element={<DataEntry />} />
+        <Route path="/services/CRMDataEntry" element={<CRMDataEntry />} />
       </Routes>
 
       {/* Footer always visible */}
