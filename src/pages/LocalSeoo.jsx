@@ -8,7 +8,7 @@ import {
   Layers,
   FileText,
 } from "lucide-react";
-import background from "../assets/banner.webp"; // replace with your image
+import background from "../assets/seo-banner.jpeg"; // replace with your image
 
 const LocalSEOPage = () => {
   const [faqOpen, setFaqOpen] = useState(null);
@@ -91,7 +91,7 @@ const LocalSEOPage = () => {
         />
       </Helmet>
       {/* HERO SECTION */}
-      <section className="relative min-h-[80vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
+      <section className="relative min-h-[100vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
         <img
           src={background}
           alt="Local SEO Services"

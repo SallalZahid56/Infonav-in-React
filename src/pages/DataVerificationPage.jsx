@@ -10,9 +10,8 @@ import {
   ClipboardList,
   ThumbsUp,
 } from "lucide-react";
-import verifyImg from "../assets/internet.jpg"; // Replace with your image
-import sourcesImg from "../assets/internet.jpg"; // Replace with your image
-import industryImg from "../assets/internet.jpg"; // Replace with your image
+import verifyImg from "../assets/data-verification.jpg"; // Replace with your image
+import sourcesImg from "../assets/tools-data-verification.webp"; // Replace with your image
 
 const DataVerificationPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -104,7 +103,7 @@ const DataVerificationPage = () => {
           <img
             src={verifyImg}
             alt="Data Verification"
-            className="rounded-xl shadow-lg max-h-80 object-cover"
+            className="rounded-xl max-h-80 object-cover"
           />
         </div>
       </section>

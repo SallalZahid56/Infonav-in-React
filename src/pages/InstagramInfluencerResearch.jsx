@@ -13,12 +13,11 @@ import {
 } from "lucide-react";
 
 // replace these imports with your actual asset filenames in src/assets/
-import instagramImg from "../assets/internet.jpg";
-import processImg from "../assets/internet.jpg";
-import toolsImg from "../assets/internet.jpg";
-import industriesImg from "../assets/internet.jpg";
-import case1Img from "../assets/internet.jpg";
-import case2Img from "../assets/internet.jpg";
+import instagramImg from "../assets/instagramInfluencers.jpg";
+import processImg from "../assets/influencerresearchprocess.png";
+import toolsImg from "../assets/social influencer research.avif";
+import case1Img from "../assets/social influencer research.avif";
+import case2Img from "../assets/social influencer research.avif";
 
 export default function InstagramInfluencerResearch() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -179,7 +178,7 @@ export default function InstagramInfluencerResearch() {
             <img
               src={instagramImg}
               alt="Instagram influencer research"
-              className="rounded-xl shadow-lg object-cover max-h-96 w-full"
+              className="rounded-xl object-cover max-h-96 w-full"
             />
           </div>
         </div>
@@ -213,7 +212,7 @@ export default function InstagramInfluencerResearch() {
             <img
               src={processImg}
               alt="Research process"
-              className="rounded-xl shadow-lg object-cover max-h-96 w-full"
+              className="rounded-xl object-cover max-h-96 w-full"
             />
           </div>
         </div>

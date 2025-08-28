@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaBolt, FaWrench, FaDollarSign, FaCheckCircle, FaBook, FaSpider, FaGlobe, FaDownload, FaTable } from "react-icons/fa";
-import background from "../assets/banner.webp";
-import introImg from "../assets/internet.jpg";
-import toolsImg from "../assets/internet.jpg";
+import background from "../assets/python banner.jpeg";
+import introImg from "../assets/web scraping.png";
+import toolsImg from "../assets/python libraries.png";
 import { Plus, Minus } from "lucide-react";
 import { Helmet } from "react-helmet";
 
@@ -70,7 +70,7 @@ const PythonScraping = () => {
     return (
         <div className="python-scraping-page">
             {/* ✅ HERO */}
-            <section className="relative h-[65vh] md:h-[70vh] flex items-center justify-center text-center text-white mt-14">
+            <section className="relative h-[100vh] md:h-[100vh] flex items-center justify-center text-center text-white mt-14">
                 <img src={background} alt="Python Scraping Services" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
                 <div className="relative z-10 px-4 sm:px-6 max-w-4xl mx-auto">
@@ -90,7 +90,7 @@ const PythonScraping = () => {
 
             <div className="px-4 sm:px-6 lg:px-8">
                 <section className="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
-                    <img src={introImg} alt="Intro" className="rounded-lg shadow-md" />
+                    <img src={introImg} alt="Intro" className="rounded-lg" />
                     <div>
                         <p className="mb-4 text-lg">
                             In today’s competitive business landscape, access to structured, up-to-date data is a game-changer. Python scraping services empower businesses to collect accurate, timely information from diverse online sources, turning raw web data into actionable insights.
@@ -172,7 +172,7 @@ const PythonScraping = () => {
 
                 {/* ✅ TOOLS WITH IMAGE LEFT */}
                 <section className="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
-                    <img src={toolsImg} alt="Tools" className="rounded-lg shadow-md" />
+                    <img src={toolsImg} alt="Tools" className="rounded-lg" />
                     <div>
                         <h2 className="text-2xl font-bold mb-6">Popular Python Libraries & Tools</h2>
                         <div className="space-y-4">

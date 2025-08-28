@@ -21,7 +21,8 @@ import {
   FiHome,
 } from "react-icons/fi";
 
-import heroImg from "../assets/internet.jpg"; // <-- replace with your asset (or keep internet.jpg you use elsewhere)
+import heroImg from "../assets/dataentry.webp"; // <-- replace with your asset (or keep internet.jpg you use elsewhere)
+import heroImgg from "../assets/data-entry-operator.jpeg.webp";
 
 const StatCard = ({ icon, value, label }) => (
   <div className="h-24 flex flex-col items-center justify-center rounded-lg bg-white/10 backdrop-blur border border-white/10 text-white transition transform hover:scale-105 hover:bg-brandOrange hover:border-brandOrange/50 shadow-lg hover:shadow-xl">
@@ -179,7 +180,7 @@ const DataEntryPage = () => {
           </div>
 
           <div className="text-center">
-            <img src={heroImg} alt="Data entry importance" className="rounded-2xl shadow-lg w-full" />
+            <img src={heroImg} alt="Data entry importance" className="rounded-2xl w-full" />
           </div>
         </div>
       </section>
@@ -235,7 +236,7 @@ const DataEntryPage = () => {
             </div>
 
             <div>
-              <img src={heroImg} alt="Flexible engagement" className="rounded-2xl shadow-lg w-full" />
+              <img src={heroImgg} alt="Flexible engagement" className="rounded-2xl w-full" />
             </div>
           </div>
         </div>

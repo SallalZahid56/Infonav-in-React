@@ -7,10 +7,10 @@ import {
     ChevronDown,
 } from "lucide-react";
 
-import marketResearchImg from "../assets/internet.jpg";
+import marketResearchImg from "../assets/whatmarketresearch.jpg";
 import researcherImg from "../assets/internet.jpg";
-import socialMediaImg from "../assets/internet.jpg";
-import competitorImg from "../assets/internet.jpg";
+import socialMediaImg from "../assets/web-research.jpg";
+import competitorImg from "../assets/competitor-research.jpg";
 import { Helmet } from "react-helmet";
 
 const MarketResearchPage = () => {
@@ -147,7 +147,7 @@ const MarketResearchPage = () => {
                     <img
                         src={marketResearchImg}
                         alt="Market Research"
-                        className="rounded-xl shadow-lg max-h-80 object-cover"
+                        className="rounded-xl max-h-80 object-cover"
                     />
                 </div>
             </section>
@@ -252,7 +252,7 @@ const MarketResearchPage = () => {
                         <img
                             src={socialMediaImg}
                             alt="Social Media Research"
-                            className="rounded-xl shadow-lg max-h-80 object-cover"
+                            className="rounded-xl max-h-80 object-cover"
                         />
                     </div>
                 </div>
@@ -276,7 +276,7 @@ const MarketResearchPage = () => {
                         <img
                             src={competitorImg}
                             alt="Competitor Analysis"
-                            className="rounded-xl shadow-lg max-h-80 object-cover"
+                            className="rounded-xl max-h-80 object-cover"
                         />
                     </div>
                 </div>

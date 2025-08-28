@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CheckCircle, Globe, Users, FileText, Database, Layers } from "lucide-react";
 import { Helmet } from "react-helmet";
-import background from "../assets/banner.webp";
+import background from "../assets/seo-banner.jpeg";
 
 const OffPageSEOPage = () => {
     const [faqOpen, setFaqOpen] = useState(null);
@@ -44,7 +44,7 @@ const OffPageSEOPage = () => {
         />
       </Helmet>
             {/* Hero Section */}
-            <section className="relative min-h-[80vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
+            <section className="relative min-h-[100vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
                 <img src={background} alt="Off-Page SEO Services" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
                 <div className="relative z-10 max-w-3xl mx-auto">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { FiCheckCircle, FiGlobe, FiUsers, FiDatabase, FiLayers, FiFileText } from "react-icons/fi";
-import background from "../assets/banner.webp";
+import background from "../assets/seo-banner.jpeg";
 
 const faqs = [
   {
@@ -51,7 +51,7 @@ export default function OnPageSEOPage() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center text-center text-white px-4 pt-24 sm:pt-28">
+      <section className="relative min-h-[100vh] flex items-center justify-center text-center text-white px-4 pt-24 sm:pt-28">
         <img src={background} alt="On-Page SEO Services" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="relative z-10 max-w-3xl mx-auto">

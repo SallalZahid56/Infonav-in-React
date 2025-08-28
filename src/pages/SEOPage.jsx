@@ -12,7 +12,8 @@ import {
   BarChart2,
   Briefcase,
 } from "lucide-react";
-import background from "../assets/banner.webp"; // same image you used elsewhere
+import background from "../assets/seo-banner.jpeg"; // same image you used elsewhere
+import backgroundImg from "../assets/seo.jpeg";
 
 const SEOPage = () => {
   const [faqOpen, setFaqOpen] = useState(null);
@@ -96,7 +97,7 @@ const SEOPage = () => {
         />
       </Helmet>
       {/* HERO */}
-      <section className="relative min-h-[80vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
+      <section className="relative min-h-[100vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4 opacity-9">
         <img
           src={background}
           alt="SEO Services"
@@ -193,7 +194,7 @@ const SEOPage = () => {
           </div>
 
           <div className="md:w-1/2">
-            <img src={background} alt="SEO team" className="w-full rounded-2xl shadow-lg" />
+            <img src={backgroundImg} alt="SEO team" className="w-full rounded-2xl" />
           </div>
         </div>
       </section>

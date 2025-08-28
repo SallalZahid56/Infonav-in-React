@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FiChevronDown, FiTarget, FiUsers, FiCheckCircle, FiGlobe } from "react-icons/fi";
 
 // Import your images from assets folder
-import heroImg from "../assets/internet.jpg";
+import heroImg from "../assets/research.avif";
 import researchImg from "../assets/internet.jpg";
-import socialMediaImg from "../assets/internet.jpg";
-import marketResearchImg from "../assets/internet.jpg";
+import socialMediaImg from "../assets/internetResearch.png";
+import marketResearchImg from "../assets/internet-research.jpeg";
 import leadResearchImg from "../assets/internet.jpg";
 import { Helmet } from "react-helmet";
 
@@ -80,7 +80,7 @@ export default function OnlineResearchServices() {
           </p>
         </div>
         <div className="lg:w-1/2">
-          <img src={heroImg} alt="Online research hero" className="rounded-2xl shadow-lg w-full" />
+          <img src={heroImg} alt="Online research hero" className="rounded-2xl w-full" />
         </div>
       </section>
 
@@ -100,7 +100,7 @@ export default function OnlineResearchServices() {
           </ul>
         </div>
         <div>
-          <img src={researchImg} alt="Research concept" className="rounded-2xl shadow-lg w-full" />
+          <img src={researchImg} alt="Research concept" className="rounded-2xl w-full" />
         </div>
       </section>
 

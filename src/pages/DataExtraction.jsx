@@ -9,6 +9,7 @@ import {
     Layers,
 } from "lucide-react";
 import background from "../assets/banner.webp";
+import backgroundg from "../assets/data extraction.png";
 
 const DataExtractionPage = () => {
     const [faqOpen, setFaqOpen] = useState(null);
@@ -144,9 +145,9 @@ const DataExtractionPage = () => {
             <section className="py-12 md:py-16 bg-gray-50">
                 <div className="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-8">
                     <img
-                        src={background}
+                        src={backgroundg}
                         alt="Why Outsource"
-                        className="w-full md:w-1/2 rounded-2xl shadow"
+                        className="w-full md:w-1/2 rounded-2xl"
                     />
                     <div className="md:w-1/2 text-center md:text-left">
                         <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-6">

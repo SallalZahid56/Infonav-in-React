@@ -13,7 +13,9 @@ import {
   FaChartLine,
   FaTools,
 } from "react-icons/fa";
-import dataEntry from "../assets/internet.jpg"
+import dataEntry from "../assets/data-cleansing.jpg"
+import dataEntryy from "../assets/data_cleanings.png"
+import dataEntryyy from "../assets/data cleaning.png"
 
 export default function DataCleaningPage() {
 
@@ -49,7 +51,7 @@ export default function DataCleaningPage() {
             <img
               src= {dataEntry}
               alt="Data Cleaning"
-              className="w-full max-w-md rounded-xl shadow"
+              className="w-full max-w-md rounded-xl"
             />
           </div>
         </div>
@@ -74,9 +76,9 @@ export default function DataCleaningPage() {
           </div>
           <div className="flex justify-center">
             <img
-              src= {dataEntry}
+              src= {dataEntryy}
               alt="Why Data Cleaning"
-              className="w-full max-w-sm rounded-xl shadow"
+              className="w-full max-w-sm rounded-xl"
             />
           </div>
         </div>
@@ -123,9 +125,9 @@ export default function DataCleaningPage() {
           </div>
           <div className="flex justify-center">
             <img
-              src= {dataEntry}
+              src= {dataEntryyy}
               alt="Data Formatting"
-              className="w-full max-w-md rounded-xl shadow"
+              className="w-full max-w-md rounded-xl"
             />
           </div>
         </div>

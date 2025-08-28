@@ -20,12 +20,9 @@ import reactLogo from "../assets/react.png";
 // ✅ Example tools (3 per service → total 24)
 const tools = [
   hubspot, salesforce, linkedin,   // Lead Generation
-  excel, googleSheets, hubspot,    // Data Entry
-  linkedin, buzzsumo, excel,       // Influencer Research
-  googleSheets, semrush, ahrefs,   // Internet Research
-  python, scrapy, beautifulsoup,   // Data Extraction
-  python, scrapy, beautifulsoup,   // Python Scraping
-  semrush, ahrefs, moz,            // SEO
+  excel, googleSheets, buzzsumo,       // Influencer Research
+  semrush, ahrefs,   // Internet Research
+  python, scrapy, beautifulsoup, moz,            // SEO
   wordpress, shopify, reactLogo,   // Web Development
 ];
 

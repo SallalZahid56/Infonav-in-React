@@ -13,7 +13,7 @@ import {
   Briefcase,
   ChevronDown,
 } from "lucide-react";
-import TikTokimg from "../assets/internet.jpg";
+import TikTokimg from "../assets/tiktokinflurncers.jpg";
 
 const TikTokInfluencerResearch = () => {
   const [openIndex, setOpenIndex] = useState(null);

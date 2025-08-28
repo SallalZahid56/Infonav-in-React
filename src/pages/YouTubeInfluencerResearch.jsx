@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { CheckCircle, ChevronDown, ChevronUp, Target, Users, Database, BarChart, FileSpreadsheet, Wrench, Globe, ShoppingBag, GraduationCap, Plane, HeartPulse, Star } from "lucide-react";
 
-import internetImg from "../assets/internet.jpg"; // ✅ Imported image
+import internetImg from "../assets/youtube-influencers.webp"; // ✅ Imported image
 
 const brandOrange = "text-orange-500";
 
@@ -70,7 +70,7 @@ const YouTubeInfluencerResearch = () => {
             </section>
 
             {/* ✅ What We Offer */}
-            <section className="py-16 px-6 bg-gray-50">
+            <section className="py-16 px-6 bg-white">
                 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
                     {/* Left Content */}
                     <div>
@@ -103,7 +103,7 @@ const YouTubeInfluencerResearch = () => {
                         <img
                             src={internetImg}
                             alt="YouTube Influencer Research"
-                            className="rounded-xl shadow-lg w-full"
+                            className="rounded-xl w-full"
                         />
                     </div>
                 </div>

@@ -13,7 +13,9 @@ import {
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import heroImg from "../assets/internet.jpg"; // ✅ Replace with actual image
+import heroImg from "../assets/crm dataentry.png"; // ✅ Replace with actual image
+import heroImgg from "../assets/crm data.webp";
+import heroImggg from "../assets/online-data-entry-service.png";
 
 const iconSize = "w-8 h-8 text-brandOrange";
 
@@ -162,7 +164,7 @@ const CRMDataEntry = () => {
                         </div>
                     </>
                 }
-                right={<img src={heroImg} alt="CRM Data Entry" className="rounded-2xl shadow-xl" />}
+                right={<img src={heroImg} alt="CRM Data Entry" className="rounded-2xl" />}
             />
 
             {/* ==== Core CRM Data Entry Solutions ==== */}
@@ -212,9 +214,9 @@ const CRMDataEntry = () => {
                         {/* Right: Image */}
                         <div className="flex justify-center">
                             <img
-                                src= {heroImg}
+                                src= {heroImgg}
                                 alt="CRM Solutions"
-                                className="rounded-2xl shadow-lg w-full max-w-lg"
+                                className="rounded-2xl w-full max-w-lg"
                             />
                         </div>
                     </div>
@@ -279,7 +281,7 @@ const CRMDataEntry = () => {
                         {/* Left: Image */}
                         <div>
                             <img
-                                src= {heroImg}
+                                src= {heroImggg}
                                 alt="Why Choose Us"
                                 className="rounded-2xl shadow-lg w-full"
                             />

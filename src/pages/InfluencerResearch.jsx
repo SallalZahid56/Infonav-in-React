@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, Search, Users, ShieldCheck, BarChart3, TrendingUp, CheckCircle, Target, FileSpreadsheet, Briefcase, Activity, Globe } from "lucide-react";
-import newImg from "../assets/internet.jpg"; // Replace with your image
+import newImg from "../assets/influencerResearch.jpg"; // Replace with your image
 import { Helmet } from "react-helmet";
 
 const InfluencerResearchPage = () => {
@@ -117,7 +117,7 @@ const InfluencerResearchPage = () => {
                     <img
                         src={newImg}
                         alt="Influencer Research"
-                        className="w-full h-auto rounded-xl shadow-lg mt-6 md:mt-0"
+                        className="w-full h-auto rounded-xl mt-6 md:mt-0"
                     />
                 </div>
             </section>
