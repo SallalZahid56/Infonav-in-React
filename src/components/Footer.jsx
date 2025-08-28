@@ -51,12 +51,11 @@ const Footer = () => {
                     <div className="container mx-auto">
                         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 gap-4">
                             <div className="flex flex-wrap justify-center md:justify-start gap-3">
-                                <a href="#howItWorks" className="hover:text-white">How it works</a>
-                                <a href="#membershipBenefits" className="hover:text-white">Benefits</a>
+                                <a href="#howItWorks" className="hover:text-white">Home</a>
                                 <a href="#services" className="hover:text-white">Services</a>
-                                <a href="#pricing" className="hover:text-white">Pricing</a>
-                                <a href="#reviews" className="hover:text-white">Reviews</a>
-                                <a href="#faq" className="hover:text-white">FAQs</a>
+                                <a href="#pricing" className="hover:text-white">About Us</a>
+                                <a href="#reviews" className="hover:text-white">Portfolio</a>
+                                <a href="#faq" className="hover:text-white">Contact Us</a>
                             </div>
 
                             <div className="flex gap-4 text-white text-lg">
