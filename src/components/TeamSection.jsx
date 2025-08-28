@@ -9,9 +9,9 @@ const TeamSection = () => {
   const teamMembers = [
     { img: team1, name: "Bilal Haider", role: "CEO & Founder" },
     { img: team2, name: "Ahmad Attique", role: "Marketing Head" },
-    { img: team3, name: "Muhammad Naeem", role: "Lead Developer" },
-    { img: team4, name: "Junaid Iqbal", role: "Project Manager" },
-    { img: team5, name: "Awais Ali", role: "SEO Specialist" },
+    { img: team3, name: "Muhammad Naeem", role: "Web & SEO Expert" },
+    { img: team4, name: "Junaid Iqbal", role: "Data Extraction Expert" },
+    { img: team5, name: "Awais Ali", role: "Lead Generation Expert" },
   ];
 
   return (
