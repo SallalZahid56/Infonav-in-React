@@ -231,9 +231,47 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
+
+            {/* ✅ Mobile Services Dropdown */}
             <li>
-              <span className="text-black">Services (See Desktop)</span>
+              <button
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                className="flex justify-between items-center w-full text-black hover:text-brandOrange transition"
+              >
+                Services
+                <span>{dropdownOpen ? "▲" : "▼"}</span>
+              </button>
+
+              {dropdownOpen && (
+                <div className="mt-3 pl-4 flex flex-col space-y-4">
+                  <Link to="/services/lead-generation" className="text-black hover:text-brandOrange">
+                    Lead Generation
+                  </Link>
+                  <Link to="/services/InternetResearch" className="text-black hover:text-brandOrange">
+                    Internet Research
+                  </Link>
+                  <Link to="/services/InfluencerResearch" className="text-black hover:text-brandOrange">
+                    Influencer Research
+                  </Link>
+                  <Link to="/services/DataEntry" className="text-black hover:text-brandOrange">
+                    Data Entry
+                  </Link>
+                  <Link to="/services/DataExtraction" className="text-black hover:text-brandOrange">
+                    Data Extraction
+                  </Link>
+                  <Link to="/services/PythonScraping" className="text-black hover:text-brandOrange">
+                    Python Scraping
+                  </Link>
+                  <Link to="/services/SEOPage" className="text-black hover:text-brandOrange">
+                    SEO
+                  </Link>
+                  <Link to="/services/WebDevelopment" className="text-black hover:text-brandOrange">
+                    Web Development
+                  </Link>
+                </div>
+              )}
             </li>
+
             <li>
               <Link to="/about" className="text-black hover:text-brandOrange transition">
                 About Us
