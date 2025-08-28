@@ -35,7 +35,11 @@ import DataCleaningExtraction from "./pages/DataCleaningExtraction";
 import PythonScraping from "./pages/PythonScraping";
 import PythonWebScraping from "./pages/PythonWebScraping";
 import DataCleaningExport from "./pages/DataCleaningExport";
-
+import SEOPage from "./pages/SEOPage";
+import ONPageSEO from "./pages/ONPageSEO";
+import OffPageSEO from "./pages/OffPageSEO";
+import TechnicalSeo from "./pages/TechnicalSeo";
+import LocalSeoo from "./pages/LocalSeoo";
 
 function App() {
   return (
@@ -87,6 +91,12 @@ function App() {
         <Route path="/services/PythonScraping" element={<PythonScraping />} />
         <Route path="/services/PythonWebScraping" element={<PythonWebScraping />} />
         <Route path="/services/DataCleaningExport" element={<DataCleaningExport />} />
+        <Route path="/services/SEOPage" element={<SEOPage />} />
+        <Route path="/services/ONPageSEO" element={<ONPageSEO />} />
+        <Route path="/services/OffPageSEO" element={<OffPageSEO />} />
+        <Route path="/services/TechnicalSeo" element={<TechnicalSeo />} />
+        <Route path="/services/LocalSeoo" element={<LocalSeoo />} />
+        
       </Routes>
 
       {/* Footer always visible */}

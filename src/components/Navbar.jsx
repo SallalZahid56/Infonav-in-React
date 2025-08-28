@@ -138,8 +138,6 @@ const Navbar = () => {
                     <ul className="space-y-2 pl-2">
                       <li><Link to="/services/PythonWebScraping" className="text-white hover:text-brandOrange transition">Python Web Scraping</Link></li>
                       <li><Link to="/services/DataCleaningExport" className="text-white hover:text-brandOrange transition">Data Cleaning</Link></li>
-                      <li><Link to="/services/data-parsing" className="text-white hover:text-brandOrange transition">Data Parsing</Link></li>
-                      <li><Link to="/services/web-automation" className="text-white hover:text-brandOrange transition">Web Automation</Link></li>
                     </ul>
                   </div>
 
@@ -147,17 +145,17 @@ const Navbar = () => {
                   <div>
                     <h5 className="font-semibold mb-2">
                       <Link
-                        to="/services/seo"
+                        to="/services/SEOPage"
                         className="text-brandOrange hover:text-brandOrange transition"
                       >
                         SEO
                       </Link>
                     </h5>
                     <ul className="space-y-2 pl-2">
-                      <li><Link to="/services/on-page-seo" className="text-white hover:text-brandOrange transition">On-Page SEO</Link></li>
-                      <li><Link to="/services/off-page-seo" className="text-white hover:text-brandOrange transition">Off-Page SEO</Link></li>
-                      <li><Link to="/services/technical-seo" className="text-white hover:text-brandOrange transition">Technical SEO</Link></li>
-                      <li><Link to="/services/local-seo" className="text-white hover:text-brandOrange transition">Local SEO</Link></li>
+                      <li><Link to="/services/ONPageSEO" className="text-white hover:text-brandOrange transition">On-Page SEO</Link></li>
+                      <li><Link to="/services/OffPageSEO" className="text-white hover:text-brandOrange transition">Off-Page SEO</Link></li>
+                      <li><Link to="/services/TechnicalSeo" className="text-white hover:text-brandOrange transition">Technical SEO</Link></li>
+                      <li><Link to="/services/LocalSeoo" className="text-white hover:text-brandOrange transition">Local SEO</Link></li>
                     </ul>
                   </div>
 
