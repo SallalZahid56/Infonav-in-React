@@ -185,13 +185,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#portfolio" className="text-black hover:text-brandOrange transition">
+            <a href="/portfolio" className="text-black hover:text-brandOrange transition">
               Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#team" className="text-black hover:text-brandOrange transition">
-              Our Team
             </a>
           </li>
           <li>

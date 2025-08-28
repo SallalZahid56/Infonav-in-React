@@ -43,6 +43,7 @@ import LocalSeoo from "./pages/LocalSeoo";
 import WebDevelopment from "./pages/WebDevelopment";
 import FrontEndDevelopment from "./pages/FrontEndDevelopment";
 import BackEndDevelopment from "./pages/BackEndDevelopment";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
 
         {/* About Us Page */}
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/portfolio" element={<Portfolio />} />
 
         <Route path="/servicesPage" element={<ServicesPage />} />
         {/* ✅ New Lead Generation Page */}
