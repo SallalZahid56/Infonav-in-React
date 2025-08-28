@@ -3,8 +3,21 @@ import aboutImg from "../assets/aboutus.png";
 import MissionVision from "../components/MissionVision";
 import ExpertiseSection from "../components/ExpertiseSection";
 import TeamSection from "../components/TeamSection";
+import { Helmet } from "react-helmet";
 
 const AboutUs = () => {
+
+   <Helmet>
+        <title>About InfoNav - Leading Digital Marketing, Lead Generation & Data Solutions</title>
+        <meta
+          name="description"
+          content="At InfoNav, we specialize in innovative digital marketing solutions including lead generation, internet research, Python scraping, and influencer research. Our mission is to drive business success with customized strategies that empower long-term growth and sustainability."
+        />
+        <meta
+          name="keywords"
+          content="digital marketing agency, lead generation services, Python scraping, influencer research, data mining, internet research, business growth, technology solutions, client success, digital strategies, trusted partnerships"
+        />
+      </Helmet>
   return (
     <>
       {/* About Section */}

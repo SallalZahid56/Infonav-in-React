@@ -5,8 +5,21 @@ import Testimonials from "../components/Testimonials";
 import Tools from "../components/Tools";
 import WhyChooseUs from "../components/WhyChooseUs";
 import HowWeDeliver from "../components/HowWeDeliver";
+import { Helmet } from "react-helmet";
 
 const ServicesPage = () => {
+
+     <Helmet>
+        <title>Digital Marketing Services - Lead Generation, SEO, Web Scraping & More | InfoNav</title>
+        <meta
+          name="description"
+          content="At InfoNav, we offer a wide range of digital marketing services, including lead generation, SEO, Python scraping, influencer research, and web development. Our client-focused approach ensures measurable results and sustainable business growth."
+        />
+        <meta
+          name="keywords"
+          content="digital marketing services, lead generation, Python scraping, SEO strategies, influencer research, internet research, data extraction, web development, data entry services, online marketing, B2B lead generation, business growth solutions"
+        />
+      </Helmet>
     return (
         <>
             {/* Main Services Intro Section */}
