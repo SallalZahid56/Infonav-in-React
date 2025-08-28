@@ -13,6 +13,7 @@ import {
   FiMail,
   FiBarChart
 } from "react-icons/fi";
+import { Helmet } from "react-helmet";
 
 const faqs = [
   {
@@ -52,6 +53,18 @@ export default function EmailMarketing() {
     { icon: <FiCheckCircle size={18} />, label: "Open Rate", value: "98%" },
     { icon: <FiBarChart size={18} />, label: "ROI Increase", value: "3x" },
   ];
+
+  <Helmet>
+        <title>TikTok Influencer Research Services | Verified Creator Discovery</title>
+        <meta
+          name="description"
+          content="Expert email marketing services to boost engagement and sales. From B2B email campaigns to targeted B2C promotions, we design, write, and send high-converting emails."
+        />
+        <meta
+          name="keywords"
+          content="email marketing services, b2b email marketing, email marketing company, email marketing agency, b2c email marketing, cold email campaigns, email automation, email drip campaigns, newsletter marketing, targeted email marketing, Info Navigators"
+        />
+      </Helmet>
 
   return (
     <div className="pt-24 bg-white text-gray-900">

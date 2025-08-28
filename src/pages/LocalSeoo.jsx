@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   Globe,
   MapPin,
@@ -78,6 +79,17 @@ const LocalSEOPage = () => {
 
   return (
     <div className="font-sans">
+      <Helmet>
+        <title>Local SEO Services | Info Navigators</title>
+        <meta
+          name="description"
+          content="Drive more local customers with our Local SEO services. From Google Business Profile optimization to local citations, Info Navigators helps your business rank in maps and local search."
+        />
+        <meta
+          name="keywords"
+          content="local SEO services, local SEO, local SEO optimization, Google My Business optimization, Google Maps SEO, local citations, local SEO company, local SEO for small businesses, local SEO agency"
+        />
+      </Helmet>
       {/* HERO SECTION */}
       <section className="relative min-h-[80vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
         <img

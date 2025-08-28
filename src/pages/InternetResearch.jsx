@@ -7,6 +7,7 @@ import researchImg from "../assets/internet.jpg";
 import socialMediaImg from "../assets/internet.jpg";
 import marketResearchImg from "../assets/internet.jpg";
 import leadResearchImg from "../assets/internet.jpg";
+import { Helmet } from "react-helmet";
 
 const faqs = [
   {
@@ -51,6 +52,20 @@ export default function OnlineResearchServices() {
       img: leadResearchImg
     }
   ];
+
+
+  <Helmet>
+        <title>Online Internet Research Services for Businesses | Info Navigators</title>
+        <meta
+          name="description"
+          content="Get reliable online internet research services with Info Navigators. We provide accurate data for market research, lead research, and competitor analysis to support smarter business decisions. Start today!"
+        />
+        <meta
+          name="keywords"
+          content="online internet research, internet research for business, web research data, social media research, internet researcher, business research, market research, competitive analysis, lead research, research internet
+"
+        />
+      </Helmet>
 
   return (
     <div className="bg-white text-gray-900 font-sans">

@@ -1,5 +1,6 @@
 import React from "react";
 import { ChevronDown, CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const Section = ({ id, children, className = "" }) => (
   <section id={id} className={`w-full py-16 ${className}`}>
@@ -44,6 +45,18 @@ export default function EmailListPage() {
     { q: "Can you also run email campaigns for me?", a: "Yes — we offer end-to-end email marketing services including content writing, design, and sending." },
   ];
 
+
+  <Helmet>
+        <title>Contact Email List Buildining Services | Verified Creator Discovery</title>
+        <meta
+          name="description"
+          content="Build high-quality, verified email lists with Info Navigators. From B2B email marketing lists to targeted consumer databases, we create contact lists that drive sales and engagement."
+        />
+        <meta
+          name="keywords"
+          content="contact email list building, buy targeted email lists, b2b email marketing lists, email list building services, b2c email list building, email marketing database, lead generation email list, verified email database, targeted contact lists"
+        />
+      </Helmet>
   return (
     <div className="bg-white text-black font-sans mt-8">
       {/* Hero */}

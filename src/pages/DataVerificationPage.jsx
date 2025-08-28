@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   CheckCircle,
   Database,
@@ -34,6 +35,19 @@ const DataVerificationPage = () => {
       a: "Absolutely. We offer one-time cleanups and ongoing validation services for businesses that rely on continuously updated data.",
     },
   ];
+
+
+  <Helmet>
+        <title>Data Verification & Fact-Checking Services | Info Navigators</title>
+        <meta
+          name="description"
+          content="Ensure your business decisions are based on accurate information with our professional data verification & fact-checking services. Reliable, precise, and trusted worldwide."
+        />
+        <meta
+          name="keywords"
+          content=" data verification services, fact-checking services, validation services, verify data accuracy, data quality check, online research fact-checking, data verification for business"
+        />
+      </Helmet>
 
   return (
     <div className="bg-white text-black font-sans">

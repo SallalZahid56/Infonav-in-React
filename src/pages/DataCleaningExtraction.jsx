@@ -1,5 +1,6 @@
 import React from "react";
 import background from "../assets/banner.webp"; // Replace with your actual background image path
+import { Helmet } from "react-helmet";
 
 const DataCleaningPage = () => {
     const faqs = [
@@ -29,6 +30,18 @@ const DataCleaningPage = () => {
     const toggleFaq = (i) => {
         setFaqOpen(faqOpen === i ? null : i);
     };
+
+    <Helmet>
+        <title>Data Cleaning & Export Services | Accurate Business Data Solutions</title>
+        <meta
+          name="description"
+          content="Professional data cleaning & formatting services to ensure accuracy, consistency, and usability. From database cleanup to multi-source data integration, we turn messy data into actionable insights."
+        />
+        <meta
+          name="keywords"
+          content="data cleaning services, data cleansing, clean data, data cleanup, data cleaning methods, data cleansing process, data cleaning tools, data cleaning best practices, database cleaning, dataset cleaning, data scrubbing techniques"
+        />
+      </Helmet>
 
     return (
         <div>

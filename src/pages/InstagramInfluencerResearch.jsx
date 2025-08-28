@@ -1,5 +1,6 @@
 // src/pages/InstagramInfluencerResearch.jsx
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   Search,
   Users,
@@ -104,6 +105,19 @@ export default function InstagramInfluencerResearch() {
       a: "Yes. Many clients use Instagram influencer research + lead generation to maximize brand outreach.",
     },
   ];
+
+
+  <Helmet>
+        <title> Instagram Influencer Research Services | Verified Influencer Discovery</title>
+        <meta
+          name="description"
+          content="Expert Instagram Influencer Research to find authentic, verified creators that grow your brand. Data-driven influencer discovery for B2B & B2C campaigns."
+        />
+        <meta
+          name="keywords"
+          content="Instagram influencer research, Instagram influencer discovery, Instagram influencer marketing research, Instagram influencer lists, influencer research services, influencer research company"
+        />
+      </Helmet>
 
   return (
     <div className="bg-white text-black font-sans">

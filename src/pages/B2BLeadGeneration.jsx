@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import {
     CheckCircle,
     Mail,
@@ -71,6 +72,19 @@ const FAQ = ({ q, a }) => (
 
 // --- Main Page ---
 export default function LeadGenerationPage() {
+
+
+    <Helmet>
+        <title>TikTok Influencer Research Services | Verified Creator Discovery</title>
+        <meta
+          name="description"
+          content="Expert B2B lead generation services with 15+ years' experience. From B2B marketing to SaaS SEO, we deliver targeted B2B leads that drive growth."
+        />
+        <meta
+          name="keywords"
+          content="b2b lead generation services, b2b email marketing lists, buy b2b email lists, b2b saas lead generation, email marketing b2b lead generation, apollo b2b leads, b2b business marketing, targeted b2b lead generation, lead generation for b2b business, b2b marketing, Info Navigators"
+        />
+      </Helmet>
     return (
         <div className="min-h-screen bg-white text-black font-sans">
             {/* HERO */}

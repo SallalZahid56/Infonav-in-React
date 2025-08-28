@@ -1,6 +1,7 @@
 // src/pages/SEOPage.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   CheckCircle,
   Globe,
@@ -83,6 +84,17 @@ const SEOPage = () => {
 
   return (
     <div className="font-sans">
+      <Helmet>
+        <title>SEO Services for Businesses | Rank Higher & Get More Traffic</title>
+        <meta
+          name="description"
+          content="Info Navigators offers expert SEO services to help businesses rank higher on Google, drive organic traffic, and generate qualified leads worldwide."
+        />
+        <meta
+          name="keywords"
+          content="SEO services, professional SEO services, SEO company, SEO agency, technical SEO, on-page SEO, off-page SEO, local SEO, international SEO, e-commerce SEO services, SEO for businesses, affordable SEO agency, best SEO company"
+        />
+      </Helmet>
       {/* HERO */}
       <section className="relative min-h-[80vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
         <img

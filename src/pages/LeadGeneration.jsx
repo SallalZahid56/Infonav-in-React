@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   FiTarget,
   FiCheckCircle,
@@ -69,6 +70,20 @@ export default function LeadGeneration() {
         { icon: <FiCheckCircle size={18} />, label: "Accuracy", value: "98%" },
         { icon: <FiBarChart size={18} />, label: "ROI Increase", value: "3x" },
     ];
+
+
+
+    <Helmet>
+        <title>TikTok Influencer Research Services | Verified Creator Discovery</title>
+        <meta
+          name="description"
+          content="Expert B2B lead generation services with 15+ years' experience. From B2B marketing to SaaS SEO, we deliver targeted leads that drive growth."
+        />
+        <meta
+          name="keywords"
+          content="b2b lead generation services,b2b email marketing lists, buy b2b email lists, b2b saas lead generation, email marketing b2b lead generation,apollo b2b leads,b2b business marketing,targeted b2b lead generation,lead generation for b2b business,b2b marketing,Info nav"
+        />
+      </Helmet>
 
     return (
         <div className="pt-24 bg-white text-gray-900">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, Search, Users, ShieldCheck, BarChart3, TrendingUp, CheckCircle, Target, FileSpreadsheet, Briefcase, Activity, Globe } from "lucide-react";
 import newImg from "../assets/internet.jpg"; // Replace with your image
+import { Helmet } from "react-helmet";
 
 const InfluencerResearchPage = () => {
     const [activeTab, setActiveTab] = useState("Instagram");
@@ -54,6 +55,18 @@ const InfluencerResearchPage = () => {
             a: "Yes, many clients combine influencer research with Lead Generation and Market Research for complete campaigns.",
         },
     ];
+
+    <Helmet>
+        <title> Influencer Research Services | Instagram, Facebook, YouTube & TikTok Research Experts</title>
+        <meta
+          name="description"
+          content="Expert Influencer Research Services to find authentic Instagram, Facebook, YouTube, and TikTok influencers. Verified, data-driven influencer research for business growth."
+        />
+        <meta
+          name="keywords"
+          content="influencer research services, Instagram influencer research, Facebook influencer research, YouTube influencer research, TikTok influencer research, influencer discovery, influencer research company, influencer marketing research"
+        />
+      </Helmet>
 
     return (
         <div className="font-sans text-gray-700">

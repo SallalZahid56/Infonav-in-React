@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import {
     CheckCircle,
     Globe,
@@ -41,6 +42,19 @@ const DataExtractionPage = () => {
             a: "Absolutely. As a global data extraction services company, we specialize in large-scale projects with quick turnaround.",
         },
     ];
+
+
+      <Helmet>
+        <title>Data Extraction Services | Reliable Web & Document Data Solutions</title>
+        <meta
+          name="description"
+          content=" Info Navigators provides reliable global data extraction services including web scraping, PDF/document data extraction, and LinkedIn research. Outsource your data extraction today."
+        />
+        <meta
+          name="keywords"
+          content="data extraction services, data extraction service, web data extraction services, most reliable data extraction service, data extraction services company, outsource data extraction services, data extraction services India, LinkedIn data extraction services, website data scraping services, data extraction company, data extraction solutions"
+        />
+      </Helmet>
 
     return (
         <div className="font-sans">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { FiCheckCircle, FiGlobe, FiUsers, FiDatabase, FiLayers, FiFileText } from "react-icons/fi";
 import background from "../assets/banner.webp";
 
@@ -36,6 +37,19 @@ export default function OnPageSEOPage() {
 
   return (
     <div className="font-sans">
+
+      <Helmet>
+        <title>On Page SEO Services | Info Navigators</title>
+        <meta
+          name="description"
+          content=" Professional On-Page SEO services by Info Navigators. Optimize metadata, headings, content, images, and internal linking to boost rankings, organic traffic, and conversions."
+        />
+        <meta
+          name="keywords"
+          content="on-page SEO, on-page SEO services, on-page SEO optimization, website SEO services, content optimization, SEO keywords, metadata optimization, internal linking SEO"
+        />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center text-center text-white px-4 pt-24 sm:pt-28">
         <img src={background} alt="On-Page SEO Services" className="absolute inset-0 w-full h-full object-cover" />

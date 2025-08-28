@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 import {
   FiCheckCircle,
   FiDatabase,
@@ -97,6 +99,18 @@ export default function DataCleaningExportPage() {
 
   return (
     <div className="font-sans">
+        <Helmet>
+        <title>Professional Data Cleaning & Export Services | Reliable Data Solutions
+Slug: /data-cleaning-export</title>
+        <meta
+          name="description"
+          content="Professional data cleaning & export services for businesses in USA, Europe & worldwide. Ensure accurate, clean datasets with seamless export in Excel, CSV, or CRM formats."
+        />
+        <meta
+          name="keywords"
+          content="data cleaning services, data cleaning, data cleansing, clean data, data cleanup, data cleaning process, database cleaning, data cleaning tools, data cleaning services company, data export services, clean dataset"
+        />
+      </Helmet>
       {/* ✅ Hero Section */}
       <section className="relative overflow-hidden py-16 px-6 text-center bg-gradient-to-br from-brandOrange/10 via-orange-100/30 to-white mt-10">
         <div className="max-w-4xl mx-auto">

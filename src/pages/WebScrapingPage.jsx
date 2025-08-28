@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { CheckCircle, Globe, Layers, Database, FileText, Users } from "lucide-react";
+import { Helmet } from "react-helmet";
 import background from "../assets/banner.webp";
 
 const WebScrapingPage = () => {
+
+
     const [faqOpen, setFaqOpen] = useState(null);
     const toggleFaq = (index) => {
         setFaqOpen(faqOpen === index ? null : index);
@@ -16,8 +19,21 @@ const WebScrapingPage = () => {
         { q: "Do you offer ongoing data scraping?", a: "Yes. Many clients hire us for monthly/weekly automated scraping to keep datasets updated." },
     ];
 
+      <Helmet>
+        <title>Web Scraping Services | Reliable Website Data Extraction Company</title>
+        <meta
+          name="description"
+          content="Professional web scraping services for businesses in USA, Europe & worldwide. Extract product data, pricing, leads, and insights with our reliable web data extraction solutions."
+        />
+        <meta
+          name="keywords"
+          content="web scraping services, web data extraction services, website data scraping services, outsource web scraping, data extraction solutions, data extraction company"
+        />
+      </Helmet>
+
     return (
         <div className="font-sans">
+
             {/* ✅ HERO SECTION */}
             <section className="relative min-h-[55vh] md:min-h-[60vh] flex items-center justify-center text-center text-white mt-14 px-4 sm:px-6 py-10 sm:py-16">
                 <img

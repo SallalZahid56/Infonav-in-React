@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { CheckCircle, Globe, FileText, Users, Database, Layers, BarChart2, Briefcase } from "lucide-react";
 import background from "../assets/web-banner.jpg";
 
@@ -36,6 +37,20 @@ const WebsiteDevelopmentPage = () => {
 
   return (
     <div className="font-sans">
+
+      <Helmet>
+        <title>Back-End Development Services | Info Navigators</title>
+        <meta
+          name="description"
+          content="Professional back-end development services with PHP, Node.js, and Laravel. Info Navigators builds secure, scalable, and high-performance web applications."
+        />
+        <meta
+          name="keywords"
+          content="back-end development services, backend developer services, node js backend development, laravel backend development, backend coding services, backend web development company, scalable backend solutions, backend API development"
+        />
+      </Helmet>
+
+      
       {/* HERO */}
       <section className="relative min-h-[100vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
         <img src={background} alt="Website Development" className="absolute inset-0 w-full h-full object-cover" />

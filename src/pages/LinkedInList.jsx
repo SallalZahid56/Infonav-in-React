@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   FiCheckCircle,
   FiTarget,
@@ -88,6 +89,18 @@ export default function LinkedInListBuilding() {
       desc: "Generated 1,500 verified contacts, securing $400K in new contracts.",
     },
   ];
+
+  <Helmet>
+        <title>TikTok Influencer Research Services | Verified Creator Discovery</title>
+        <meta
+          name="description"
+          content="Expert LinkedIn list-building services for targeted lead generation. We build verified LinkedIn prospect lists with decision-makers, influencers, and high-value contacts for your B2B outreach."
+        />
+        <meta
+          name="keywords"
+          content="LinkedIn list building, LinkedIn leads, b2b linkedin lead generation, LinkedIn prospecting services, LinkedIn sales navigator lists, LinkedIn contact list building, targeted LinkedIn leads, LinkedIn outreach lists, Info Navigators"
+        />
+      </Helmet>
 
   return (
     <div className="pt-24 bg-white text-gray-900">

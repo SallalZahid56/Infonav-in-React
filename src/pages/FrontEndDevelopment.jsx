@@ -1,6 +1,7 @@
 // src/pages/FrontEndDevelopment.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   Monitor,
   Layout,
@@ -51,6 +52,18 @@ const FrontEndDevelopment = () => {
 
   return (
     <div className="font-sans">
+
+      <Helmet>
+        <title>Front-End Development Services | Responsive & SEO-Friendly Websites</title>
+        <meta
+          name="description"
+          content=" Professional front-end development services with React, Vue, and modern frameworks. Info Navigators builds responsive, SEO-optimized websites that drive results."
+        />
+        <meta
+          name="keywords"
+          content="front-end development, frontend developer services, responsive web design, react js development, angular frontend development, frontend coding services"
+        />
+      </Helmet>
       {/* HERO */}
       <section className="relative min-h-[100vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
         <img src={background} alt="Front-End Development" className="absolute inset-0 w-full h-full object-cover" />

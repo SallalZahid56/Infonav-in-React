@@ -1,6 +1,7 @@
 // src/pages/DataEntryFull.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   FiUsers,
   FiTrendingUp,
@@ -76,6 +77,20 @@ const DataEntryPage = () => {
       a: "Outsourcing ensures speed, cost savings, and error-free records—freeing your internal teams for higher-value tasks.",
     },
   ];
+
+
+
+  <Helmet>
+        <title> Professional Data Entry Services for Businesses | Info Navigators</title>
+        <meta
+          name="description"
+          content="Get reliable and accurate data entry services from Info Navigators. We offer CRM data entry, data cleaning, and database management with scalable, cost-effective solutions. Start your project today!"
+        />
+        <meta
+          name="keywords"
+          content="data entry services, CRM data entry, data cleaning & formatting, database entry, remote data entry, freelance data entry, e-commerce data entry, healthcare data entry, virtual data entry, part-time data entry jobs"
+        />
+      </Helmet>
 
   return (
     <div className="bg-white text-gray-800 font-sans">

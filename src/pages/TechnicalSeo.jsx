@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   CheckCircle,
   Settings,
@@ -82,6 +83,17 @@ const TechnicalSEOPage = () => {
 
   return (
     <div className="font-sans">
+      <Helmet>
+        <title>Technical SEO Services | Info Navigators</title>
+        <meta
+          name="description"
+          content=" Improve site performance, speed, and crawlability with our expert Technical SEO services. Info Navigators ensures your website is optimized for search engines and users."
+        />
+        <meta
+          name="keywords"
+          content=" technical SEO, technical SEO services, technical SEO optimization, website speed optimization, SEO site audit, crawlability optimization, structured data SEO, schema markup SEO, mobile SEO optimization, SEO technical audit, technical SEO company"
+        />
+      </Helmet>
       {/* HERO SECTION */}
       <section className="relative min-h-[80vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
         <img

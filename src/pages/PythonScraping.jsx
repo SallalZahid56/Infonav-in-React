@@ -4,6 +4,7 @@ import background from "../assets/banner.webp";
 import introImg from "../assets/internet.jpg";
 import toolsImg from "../assets/internet.jpg";
 import { Plus, Minus } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const PythonScraping = () => {
 
@@ -52,6 +53,19 @@ const PythonScraping = () => {
         { icon: <FaDownload className="text-brandOrange text-3xl" />, title: "Requests", text: "Fetch web data efficiently." },
         { icon: <FaTable className="text-brandOrange text-3xl" />, title: "Pandas", text: "Transform and export structured data." },
     ];
+
+
+    <Helmet>
+        <title>Python Scraping Services for Lead Generation | InfoNavigators</title>
+        <meta
+          name="description"
+          content="InfoNavigators’ Python scraping services unlock actionable data for lead generation. Custom web scraping solutions to extract emails, contacts, and sales-ready leads."
+        />
+        <meta
+          name="keywords"
+          content="Python scraping services, web scraping for leads, custom data extraction, email lead generation, sales-ready leads, InfoNavigators"
+        />
+      </Helmet>
 
     return (
         <div className="python-scraping-page">

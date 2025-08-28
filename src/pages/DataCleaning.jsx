@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   FaDatabase,
   FaCheckCircle,
@@ -15,6 +16,18 @@ import {
 import dataEntry from "../assets/internet.jpg"
 
 export default function DataCleaningPage() {
+
+  <Helmet>
+        <title>Back-End Development Services | Info Navigators</title>
+        <meta
+          name="description"
+          content="Ensure accuracy with our global data cleaning & export services. We clean, validate, and transform messy datasets into actionable insights for businesses."
+        />
+        <meta
+          name="keywords"
+          content="data cleaning services, data export services, clean data, data cleaning process, data cleaning tools, data cleaning and export, outsource data cleaning, data cleaning company, database cleaning, data formatting"
+        />
+      </Helmet>
   return (
     <div className="font-sans text-gray-800">
       {/* ✅ HERO SECTION */}

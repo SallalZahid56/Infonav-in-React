@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CheckCircle, Globe, Users, FileText, Database, Layers } from "lucide-react";
+import { Helmet } from "react-helmet";
 import background from "../assets/banner.webp";
 
 const OffPageSEOPage = () => {
@@ -30,6 +31,18 @@ const OffPageSEOPage = () => {
 
     return (
         <div className="font-sans">
+
+            <Helmet>
+        <title>Off Page SEO Services | Info Navigators</title>
+        <meta
+          name="description"
+          content="Build authority and rank higher with professional Off-Page SEO services. Info Navigators provides link building, digital PR, and authority optimization to boost your visibility."
+        />
+        <meta
+          name="keywords"
+          content="off-page SEO, off-page SEO services, link building services, backlinks SEO, digital PR services, SEO authority building, content outreach, off-page optimization, guest posting, white hat link building"
+        />
+      </Helmet>
             {/* Hero Section */}
             <section className="relative min-h-[80vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
                 <img src={background} alt="Off-Page SEO Services" className="absolute inset-0 w-full h-full object-cover" />

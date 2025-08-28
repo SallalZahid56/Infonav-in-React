@@ -11,6 +11,7 @@ import marketResearchImg from "../assets/internet.jpg";
 import researcherImg from "../assets/internet.jpg";
 import socialMediaImg from "../assets/internet.jpg";
 import competitorImg from "../assets/internet.jpg";
+import { Helmet } from "react-helmet";
 
 const MarketResearchPage = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -91,6 +92,18 @@ const MarketResearchPage = () => {
         },
     ];
 
+
+    <Helmet>
+        <title>Market Research & Competitor Analysis Services </title>
+        <meta
+          name="description"
+          content="Unlock smarter, data-driven business decisions with Info Navigators' expert market research and competitor analysis services. Our tailored solutions offer valuable insights to help you stay ahead of the competition. Start your project today!"
+        />
+        <meta
+          name="keywords"
+          content="market research, market research services, market research tools, market research companies, market research analyst, marketing research, online market research, market research firms, market research surveys, business market research, market research reports, competitor analysis, qualitative market research, market research definition, AI market research, B2B market research"
+        />
+      </Helmet>
     return (
         <div className="bg-white text-black font-sans">
             {/* ✅ Hero Section */}

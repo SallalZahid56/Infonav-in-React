@@ -11,6 +11,7 @@ import {
     UploadCloud,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import heroImg from "../assets/internet.jpg"; // ✅ Replace with actual image
 
@@ -59,6 +60,20 @@ const CRMDataEntry = () => {
         { icon: <FiCheckCircle size={18} />, label: "Accuracy", value: "98%" },
         { icon: <FiBarChart size={18} />, label: "ROI Increase", value: "3x" },
     ];
+
+
+    <Helmet>
+        <title>CRM Data Entry Services | Verified Creator Discovery</title>
+        <meta
+          name="description"
+          content="Professional CRM data entry services to keep your sales pipeline clean, organized, and conversion-ready. Accurate, secure, and tailored for your business."
+        />
+        <meta
+          name="keywords"
+          content="crm data entry, crm data management, crm data entry services, Salesforce data entry, HubSpot data entry, zoho crm data entry, crm data migration, crm database management, crm data cleaning
+"
+        />
+      </Helmet>
 
     return (
         <div className="bg-white text-gray-800 font-sans">

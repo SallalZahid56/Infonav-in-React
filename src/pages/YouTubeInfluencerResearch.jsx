@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { CheckCircle, ChevronDown, ChevronUp, Target, Users, Database, BarChart, FileSpreadsheet, Wrench, Globe, ShoppingBag, GraduationCap, Plane, HeartPulse, Star } from "lucide-react";
 
 import internetImg from "../assets/internet.jpg"; // ✅ Imported image
@@ -34,6 +35,19 @@ const YouTubeInfluencerResearch = () => {
             a: "Yes, many clients combine influencer research with lead generation and market research for maximum impact.",
         },
     ];
+
+
+    <Helmet>
+        <title>YouTube Influencer Research Services | Verified Creator Discovery</title>
+        <meta
+          name="description"
+          content="Expert YouTube influencer research to discover verified creators, analyze engagement, and deliver data-driven influencer lists for impactful campaigns."
+        />
+        <meta
+          name="keywords"
+          content="YouTube influencer research, YouTube influencer discovery, YouTube influencer marketing research, YouTube influencer lists, influencer research services, influencer research company"
+        />
+      </Helmet>
 
     return (
         <div className="bg-gray-50 text-gray-800">

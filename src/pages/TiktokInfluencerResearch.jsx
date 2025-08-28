@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   CheckCircle,
   Search,
@@ -49,6 +50,18 @@ const TikTokInfluencerResearch = () => {
         "Absolutely. Many clients bundle TikTok, YouTube, and Instagram influencer research for multi-platform campaigns.",
     },
   ];
+
+    <Helmet>
+        <title>TikTok Influencer Research Services | Verified Creator Discovery</title>
+        <meta
+          name="description"
+          content="Expert TikTok influencer research to help brands discover verified creators, analyze engagement, and deliver data-driven influencer lists for high-ROI campaigns."
+        />
+        <meta
+          name="keywords"
+          content="TikTok influencer research, TikTok influencer discovery, TikTok influencer marketing research, TikTok influencer lists, influencer research services, influencer research company"
+        />
+      </Helmet>
 
   return (
     <div className="w-full bg-white text-gray-900 font-sans">

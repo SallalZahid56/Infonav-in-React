@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   FiCheckCircle,
   FiZap,
@@ -89,6 +90,18 @@ const faqs = [
 
 export default function PythonWebScrapingPage() {
   const [openFAQ, setOpenFAQ] = useState(null);
+
+  <Helmet>
+        <title>Python Web Scraping Services with Libraries | Data Extraction Experts</title>
+        <meta
+          name="description"
+          content="Professional Python web scraping services using BeautifulSoup, Scrapy, Selenium & Pandas. Extract, clean, and export accurate web data for business growth."
+        />
+        <meta
+          name="keywords"
+          content="python web scraping, web scraping with python, python web scraping libraries, python web scraping services, beautifulsoup scraping, scrapy web scraping, selenium web scraping, pandas data cleaning, python data extraction services"
+        />
+      </Helmet>
 
   return (
     <div className="font-sans">
