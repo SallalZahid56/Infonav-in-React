@@ -40,6 +40,9 @@ import ONPageSEO from "./pages/ONPageSEO";
 import OffPageSEO from "./pages/OffPageSEO";
 import TechnicalSeo from "./pages/TechnicalSeo";
 import LocalSeoo from "./pages/LocalSeoo";
+import WebDevelopment from "./pages/WebDevelopment";
+import FrontEndDevelopment from "./pages/FrontEndDevelopment";
+import BackEndDevelopment from "./pages/BackEndDevelopment";
 
 function App() {
   return (
@@ -96,7 +99,9 @@ function App() {
         <Route path="/services/OffPageSEO" element={<OffPageSEO />} />
         <Route path="/services/TechnicalSeo" element={<TechnicalSeo />} />
         <Route path="/services/LocalSeoo" element={<LocalSeoo />} />
-        
+        <Route path="/services/WebDevelopment" element={<WebDevelopment />} />
+        <Route path="/services/FrontEndDevelopment" element={<FrontEndDevelopment />} />
+        <Route path="/services/BackEndDevelopment" element={<BackEndDevelopment />} />
       </Routes>
 
       {/* Footer always visible */}
