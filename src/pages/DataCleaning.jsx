@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 import {
   FaDatabase,
   FaCheckCircle,
@@ -213,6 +214,8 @@ export default function DataCleaningPage() {
           </div>
         </div>
       </section>
+
+      <FinalCTA />
     </div>
   );
 }

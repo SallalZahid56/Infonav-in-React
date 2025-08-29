@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 
 import heroImg from "../assets/crm dataentry.png"; // ✅ Replace with actual image
 import heroImgg from "../assets/crm data.webp";
@@ -96,13 +97,13 @@ const CRMDataEntry = () => {
                             </p>
                             <div className="mt-8 flex flex-wrap gap-4">
                                 <Link
-                                    to="/contact"
+                                    to="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
                                     className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition"
                                 >
                                     Book a Free Consultation
                                 </Link>
                                 <a
-                                    href="#services"
+                                    href="/ServicesPage"
                                     className="px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition"
                                 >
                                     Explore Services
@@ -315,8 +316,7 @@ const CRMDataEntry = () => {
             </section>
 
 
-            {/* ✅ Other Sections: Repeat using SectionShell */}
-            {/* Add sections for: Core CRM Solutions, Platforms, Process, Why Choose Us */}
+            <FinalCTA />
         </div>
     );
 };

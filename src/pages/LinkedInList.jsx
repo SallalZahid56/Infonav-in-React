@@ -9,6 +9,7 @@ import {
   FiGlobe,
   FiChevronDown,
 } from "react-icons/fi";
+import FinalCTA from "../components/FinalCTA";
 
 const faqs = [
   {
@@ -114,13 +115,13 @@ export default function LinkedInListBuilding() {
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Link
-            to="/contact"
+            to="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
             className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition"
           >
             Book a Free Consultation
           </Link>
           <a
-            href="#services"
+            href="/ServicesPage"
             className="px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition"
           >
             Explore Services
@@ -253,26 +254,7 @@ export default function LinkedInListBuilding() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section className="relative overflow-hidden p-6 md:p-10 lg:p-12">
-        <div className="absolute inset-0 bg-gradient-to-br from-brandOrange via-orange-500 to-black opacity-90" />
-        <div className="container mx-auto px-6 py-16 relative text-white text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold">
-            Ready to Get Verified LinkedIn Leads?
-          </h2>
-          <p className="mt-3 text-orange-100">
-            Receive a custom LinkedIn prospect list tailored to your target audience and campaign goals.
-          </p>
-          <div className="mt-6">
-            <Link
-              to="/contact"
-              className="bg-white text-black px-6 py-3 rounded-xl font-semibold shadow hover:bg-black hover:text-white transition"
-            >
-              Book a Call
-            </Link>
-          </div>
-        </div>
-      </section>
+      <FinalCTA />
     </div>
   );
 }

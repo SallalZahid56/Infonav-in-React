@@ -6,7 +6,7 @@ import {
     Search,
     ChevronDown,
 } from "lucide-react";
-
+import FinalCTA from "../components/FinalCTA";
 import marketResearchImg from "../assets/whatmarketresearch.jpg";
 import researcherImg from "../assets/internet.jpg";
 import socialMediaImg from "../assets/web-research.jpg";
@@ -96,14 +96,14 @@ const MarketResearchPage = () => {
     <Helmet>
         <title>Market Research & Competitor Analysis Services </title>
         <meta
-          name="description"
-          content="Unlock smarter, data-driven business decisions with Info Navigators' expert market research and competitor analysis services. Our tailored solutions offer valuable insights to help you stay ahead of the competition. Start your project today!"
+            name="description"
+            content="Unlock smarter, data-driven business decisions with Info Navigators' expert market research and competitor analysis services. Our tailored solutions offer valuable insights to help you stay ahead of the competition. Start your project today!"
         />
         <meta
-          name="keywords"
-          content="market research, market research services, market research tools, market research companies, market research analyst, marketing research, online market research, market research firms, market research surveys, business market research, market research reports, competitor analysis, qualitative market research, market research definition, AI market research, B2B market research"
+            name="keywords"
+            content="market research, market research services, market research tools, market research companies, market research analyst, marketing research, online market research, market research firms, market research surveys, business market research, market research reports, competitor analysis, qualitative market research, market research definition, AI market research, B2B market research"
         />
-      </Helmet>
+    </Helmet>
     return (
         <div className="bg-white text-black font-sans">
             {/* ✅ Hero Section */}
@@ -120,9 +120,12 @@ const MarketResearchPage = () => {
                     you the insights you need to make smarter, faster, and more profitable
                     choices.
                 </p>
-                <button className="bg-brandOrange text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-black transition">
+                <a
+                    href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."  // 🔗 replace with your page route or "mailto:contact@infonavigators.com"
+                    className="inline-block bg-brandOrange text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-black transition"
+                >
                     Get a Free Consultation
-                </button>
+                </a>
             </section>
 
             {/* ✅ What is Market Research */}
@@ -312,6 +315,8 @@ const MarketResearchPage = () => {
                     </div>
                 </div>
             </section>
+
+            <FinalCTA />
         </div>
     );
 };

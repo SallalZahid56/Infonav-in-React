@@ -9,6 +9,8 @@ import marketResearchImg from "../assets/internet-research.jpeg";
 import leadResearchImg from "../assets/internet.jpg";
 import { Helmet } from "react-helmet";
 
+import FinalCTA from "../components/FinalCTA";
+
 const faqs = [
   {
     q: "What does an online internet researcher do?",
@@ -175,6 +177,8 @@ export default function OnlineResearchServices() {
           </div>
         </div>
       </section>
+
+      <FinalCTA />
     </div>
   );
 }

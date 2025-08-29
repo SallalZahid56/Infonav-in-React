@@ -14,6 +14,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import TikTokimg from "../assets/tiktokinflurncers.jpg";
+import FinalCTA from "../components/FinalCTA";
 
 const TikTokInfluencerResearch = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -289,6 +290,7 @@ const TikTokInfluencerResearch = () => {
           ))}
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 };

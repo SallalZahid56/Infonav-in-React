@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import background from "../assets/banner.webp";
 import backgroundg from "../assets/data extraction.png";
-
+import FinalCTA from "../components/FinalCTA";
 const DataExtractionPage = () => {
     const [faqOpen, setFaqOpen] = useState(null);
     const toggleFaq = (index) => {
@@ -60,7 +60,7 @@ const DataExtractionPage = () => {
     return (
         <div className="font-sans">
             {/* ✅ HERO SECTION */}
-            <section className="relative min-h-[80vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
+            <section className="relative min-h-[100vh] md:h-[60vh] flex items-center justify-center text-center text-white pt-24 sm:pt-28 px-4">
                 {/* Background Image */}
                 <img
                     src={background}
@@ -82,7 +82,7 @@ const DataExtractionPage = () => {
                         for smarter decisions.
                     </p>
                     <a
-                        href="#contact"
+                        href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
                         className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading text-base sm:text-lg"
                     >
                         Get Started
@@ -232,6 +232,7 @@ const DataExtractionPage = () => {
                     </div>
                 </div>
             </section>
+            <FinalCTA />
         </div>
     );
 };

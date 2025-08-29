@@ -14,7 +14,7 @@ import {
   FiHome,
   FiUsers,
 } from "react-icons/fi";
-
+import FinalCTA from "../components/FinalCTA";
 
 const stats = [
   { icon: <FiZap />, value: "Fast", label: "Execution" },
@@ -256,6 +256,7 @@ export default function PythonWebScrapingPage() {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 }

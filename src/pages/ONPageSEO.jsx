@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { FiCheckCircle, FiGlobe, FiUsers, FiDatabase, FiLayers, FiFileText } from "react-icons/fi";
 import background from "../assets/seo-banner.jpeg";
-
+import FinalCTA from "../components/FinalCTA";
 const faqs = [
   {
     q: "What is the difference between On-Page and Off-Page SEO?",
@@ -161,6 +161,7 @@ export default function OnPageSEOPage() {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 }

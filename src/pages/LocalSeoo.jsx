@@ -9,6 +9,8 @@ import {
   FileText,
 } from "lucide-react";
 import background from "../assets/seo-banner.jpeg"; // replace with your image
+import FinalCTA from "../components/FinalCTA";
+
 
 const LocalSEOPage = () => {
   const [faqOpen, setFaqOpen] = useState(null);
@@ -106,7 +108,7 @@ const LocalSEOPage = () => {
             Help your business rank on Google Maps, local search results, and voice searches. Our local SEO strategies ensure your customers can easily find you.
           </p>
           <a
-            href="#contact"
+            href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
             className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading text-base sm:text-lg"
           >
             Get Started
@@ -215,6 +217,7 @@ const LocalSEOPage = () => {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CheckCircle, Globe, Layers, Database, FileText, Users } from "lucide-react";
 import { Helmet } from "react-helmet";
 import background from "../assets/banner.webp";
+import FinalCTA from "../components/FinalCTA";
 
 const WebScrapingPage = () => {
 
@@ -190,6 +191,7 @@ const WebScrapingPage = () => {
                     </div>
                 </div>
             </section>
+            <FinalCTA />
         </div>
     );
 };

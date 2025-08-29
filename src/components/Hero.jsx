@@ -29,13 +29,13 @@ const Hero = () => {
           {/* Buttons */}
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="#newsletter"
+              href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
               className="bg-brandOrange text-white font-heading px-6 sm:px-7 py-2.5 sm:py-3 rounded-full shadow hover:bg-black transition flex items-center justify-center text-sm sm:text-base md:text-lg"
             >
-              News Letter ⮕
+              Get Free Sample ⮕
             </a>
             <a
-              href="#portfolio"
+              href="/portfolio"
               className="bg-brandOrange text-white font-heading px-6 sm:px-7 py-2.5 sm:py-3 rounded-full shadow hover:bg-black transition flex items-center justify-center text-sm sm:text-base md:text-lg"
             >
               Our Portfolio ⮕

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { CheckCircle, Globe, FileText, Users, Database, Layers, BarChart2, Briefcase } from "lucide-react";
 import background from "../assets/web-banner.jpg";
+import FinalCTA from "../components/FinalCTA";
 
 const WebsiteDevelopmentPage = () => {
   const [faqOpen, setFaqOpen] = useState(null);
@@ -162,6 +163,7 @@ const WebsiteDevelopmentPage = () => {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 };

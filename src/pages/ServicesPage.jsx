@@ -6,6 +6,7 @@ import Tools from "../components/Tools";
 import WhyChooseUs from "../components/WhyChooseUs";
 import HowWeDeliver from "../components/HowWeDeliver";
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 
 const ServicesPage = () => {
 
@@ -68,6 +69,7 @@ const ServicesPage = () => {
             <Tools />
             <WhyChooseUs />
             <Testimonials />
+            <FinalCTA />
         </>
     );
 };

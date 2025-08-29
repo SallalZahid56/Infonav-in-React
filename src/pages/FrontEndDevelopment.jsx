@@ -13,6 +13,7 @@ import {
   BarChart2,
 } from "lucide-react";
 import background from "../assets/web-banner.jpg"; // replace with your hero image
+import FinalCTA from "../components/FinalCTA";
 
 const FrontEndDevelopment = () => {
   const [faqOpen, setFaqOpen] = useState(null);
@@ -76,15 +77,15 @@ const FrontEndDevelopment = () => {
             We transform your brand’s vision into fast, interactive, and SEO-friendly websites using modern frameworks and expert coding.
           </p>
           <div className="flex items-center justify-center gap-4">
-            <Link to="/contact" className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading">
+            <Link to="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website." className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading">
               Book a Free Consultation
             </Link>
-            <a href="#core-services" className="inline-block px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition font-heading bg-white/10">
+            <a href="/ServicesPage" className="inline-block px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition font-heading bg-white/10">
               Explore Services
             </a>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            👉 Related: <Link to="/web-development" className="text-white underline">Web Development Services</Link>
+            👉 Related: <Link to="/services/WebDevelopment" className="text-white underline">Web Development Services</Link>
           </p>
         </div>
       </section>
@@ -171,6 +172,7 @@ const FrontEndDevelopment = () => {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 };

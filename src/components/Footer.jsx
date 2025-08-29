@@ -4,6 +4,7 @@ import {
     FaInstagram,
     FaEnvelope,
     FaLinkedin,
+    FaFacebook,
 } from 'react-icons/fa';
 import footerBg from '../assets/foter.png';
 
@@ -36,12 +37,21 @@ const Footer = () => {
 
                         {/* CTA Buttons */}
                         <div className="flex justify-center gap-4 flex-wrap">
-                            <button className="bg-[black] text-white border border-white rounded-md px-6 py-3 uppercase text-xs tracking-wide font-semibold h-11">
+                            <a
+                                href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
+                                className="bg-[black] text-white border border-white rounded-md px-6 py-3 uppercase text-xs tracking-wide font-semibold h-11 flex items-center justify-center"
+                            >
                                 Get Started
-                            </button>
-                            <button className="bg-[black] text-white border border-white rounded-md px-6 py-3 uppercase text-xs tracking-wide font-semibold h-11">
+                            </a>
+
+                            <a
+                                href="mailto:contact@infonavigators.com" // ✅ replace with your WhatsApp number OR messenger link
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-[black] text-white border border-white rounded-md px-6 py-3 uppercase text-xs tracking-wide font-semibold h-11 flex items-center justify-center"
+                            >
                                 Message Us
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -51,18 +61,23 @@ const Footer = () => {
                     <div className="container mx-auto">
                         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 gap-4">
                             <div className="flex flex-wrap justify-center md:justify-start gap-3">
-                                <a href="#howItWorks" className="hover:text-white">Home</a>
-                                <a href="#services" className="hover:text-white">Services</a>
-                                <a href="#pricing" className="hover:text-white">About Us</a>
-                                <a href="#reviews" className="hover:text-white">Portfolio</a>
-                                <a href="#faq" className="hover:text-white">Contact Us</a>
+                                <a href="/" className="hover:text-white">Home</a>
+                                <a href="/ServicesPage" className="hover:text-white">Services</a>
+                                <a href="/about" className="hover:text-white">About Us</a>
+                                <a href="/portfolio" className="hover:text-white">Portfolio</a>
+                                <a href="/contact-us" className="hover:text-white">Contact Us</a>
                             </div>
 
                             <div className="flex gap-4 text-white text-lg">
-                                <a href="#"><FaWhatsapp /></a>
-                                <a href="#"><FaInstagram /></a>
-                                <a href="#"><FaEnvelope /></a>
-                                <a href="#"><FaLinkedin /></a>
+                                <a href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."><FaWhatsapp /></a>
+                                <a href="https://www.instagram.com/infonavigators/"><FaInstagram /></a>
+                                <a href="mailto:contact@infonavigators.com">
+                                    <FaEnvelope />
+                                </a>
+                                <a href="https://www.facebook.com/infonavigators">
+                                    <FaFacebook />
+                                </a>
+                                <a href="https://www.linkedin.com/company/infonavigatorss/ "><FaLinkedin /></a>
                             </div>
                         </div>
 

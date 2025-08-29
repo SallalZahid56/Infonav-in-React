@@ -9,6 +9,7 @@ import {
   FileText,
 } from "lucide-react";
 import background from "../assets/seo-banner.jpeg"; // replace with your image
+import FinalCTA from "../components/FinalCTA";
 
 const TechnicalSEOPage = () => {
   const [faqOpen, setFaqOpen] = useState(null);
@@ -226,6 +227,7 @@ const TechnicalSEOPage = () => {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 };

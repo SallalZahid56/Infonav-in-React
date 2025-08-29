@@ -4,6 +4,7 @@ import MissionVision from "../components/MissionVision";
 import ExpertiseSection from "../components/ExpertiseSection";
 import TeamSection from "../components/TeamSection";
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 
 const AboutUs = () => {
 
@@ -62,6 +63,7 @@ const AboutUs = () => {
       <ExpertiseSection />
       <MissionVision />
       <TeamSection />
+      <FinalCTA />
     </>
   );
 };

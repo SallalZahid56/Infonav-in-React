@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import verifyImg from "../assets/data-verification.jpg"; // Replace with your image
 import sourcesImg from "../assets/tools-data-verification.webp"; // Replace with your image
+import FinalCTA from "../components/FinalCTA";
 
 const DataVerificationPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -37,16 +38,16 @@ const DataVerificationPage = () => {
 
 
   <Helmet>
-        <title>Data Verification & Fact-Checking Services | Info Navigators</title>
-        <meta
-          name="description"
-          content="Ensure your business decisions are based on accurate information with our professional data verification & fact-checking services. Reliable, precise, and trusted worldwide."
-        />
-        <meta
-          name="keywords"
-          content=" data verification services, fact-checking services, validation services, verify data accuracy, data quality check, online research fact-checking, data verification for business"
-        />
-      </Helmet>
+    <title>Data Verification & Fact-Checking Services | Info Navigators</title>
+    <meta
+      name="description"
+      content="Ensure your business decisions are based on accurate information with our professional data verification & fact-checking services. Reliable, precise, and trusted worldwide."
+    />
+    <meta
+      name="keywords"
+      content=" data verification services, fact-checking services, validation services, verify data accuracy, data quality check, online research fact-checking, data verification for business"
+    />
+  </Helmet>
 
   return (
     <div className="bg-white text-black font-sans">
@@ -64,9 +65,12 @@ const DataVerificationPage = () => {
           information is accurate, complete, and trustworthy before it’s used
           for decision-making.
         </p>
-        <button className="bg-brandOrange text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-black transition">
+        <a
+          href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."  // 🔗 replace with your page route or "mailto:contact@infonavigators.com"
+          className="inline-block bg-brandOrange text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-black transition"
+        >
           Get a Free Consultation
-        </button>
+        </a>
       </section>
 
       {/* ✅ Why Data Verification Matters */}
@@ -281,9 +285,8 @@ const DataVerificationPage = () => {
                 >
                   {faq.q}
                   <ChevronDown
-                    className={`w-5 h-5 transition-transform ${
-                      openIndex === index ? "rotate-180" : ""
-                    }`}
+                    className={`w-5 h-5 transition-transform ${openIndex === index ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 {openIndex === index && (
@@ -294,6 +297,7 @@ const DataVerificationPage = () => {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 };

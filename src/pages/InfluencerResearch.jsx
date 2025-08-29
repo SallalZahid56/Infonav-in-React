@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ChevronDown, Search, Users, ShieldCheck, BarChart3, TrendingUp, CheckCircle, Target, FileSpreadsheet, Briefcase, Activity, Globe } from "lucide-react";
 import newImg from "../assets/influencerResearch.jpg"; // Replace with your image
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 
 const InfluencerResearchPage = () => {
     const [activeTab, setActiveTab] = useState("Instagram");
@@ -11,25 +12,25 @@ const InfluencerResearchPage = () => {
             name: "Instagram",
             description:
                 "Discover Instagram influencers with strong engagement and authentic reach. Perfect for lifestyle, fashion, food, and e-commerce brands.",
-            link: "#",
+            link: "/services/InstagramInfluencerResearch",
         },
         {
             name: "Facebook",
             description:
                 "We identify Facebook page admins, group leaders, and content creators who influence community-driven audiences.",
-            link: "#",
+            link: "/services/InstagramInfluencerResearch",
         },
         {
             name: "YouTube",
             description:
                 "Get connected with YouTube creators who build trust through tutorials, product reviews, and industry authority content.",
-            link: "#",
+            link: "/services/YouTubeInfluencerResearch",
         },
         {
             name: "TikTok",
             description:
                 "Find TikTok creators that create viral campaigns for Gen Z and millennials, perfect for quick brand exposure.",
-            link: "#",
+            link: "/services/TiktokInfluencerResearch",
         },
     ];
 
@@ -59,14 +60,14 @@ const InfluencerResearchPage = () => {
     <Helmet>
         <title> Influencer Research Services | Instagram, Facebook, YouTube & TikTok Research Experts</title>
         <meta
-          name="description"
-          content="Expert Influencer Research Services to find authentic Instagram, Facebook, YouTube, and TikTok influencers. Verified, data-driven influencer research for business growth."
+            name="description"
+            content="Expert Influencer Research Services to find authentic Instagram, Facebook, YouTube, and TikTok influencers. Verified, data-driven influencer research for business growth."
         />
         <meta
-          name="keywords"
-          content="influencer research services, Instagram influencer research, Facebook influencer research, YouTube influencer research, TikTok influencer research, influencer discovery, influencer research company, influencer marketing research"
+            name="keywords"
+            content="influencer research services, Instagram influencer research, Facebook influencer research, YouTube influencer research, TikTok influencer research, influencer discovery, influencer research company, influencer marketing research"
         />
-      </Helmet>
+    </Helmet>
 
     return (
         <div className="font-sans text-gray-700">
@@ -83,9 +84,12 @@ const InfluencerResearchPage = () => {
                     influencer research services that give you the insights you need to make
                     smarter, faster, and more profitable choices.
                 </p>
-                <button className="bg-brandOrange text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-black transition w-full sm:w-auto">
+                <a
+                    href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."  // 🔗 replace with your page route or "mailto:contact@infonavigators.com"
+                    className="inline-block bg-brandOrange text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-black transition"
+                >
                     Get a Free Consultation
-                </button>
+                </a>
             </section>
 
             {/* ✅ Why Influencer Research */}
@@ -106,7 +110,7 @@ const InfluencerResearchPage = () => {
                         credibility, and generate measurable ROI.
                     </p>
                     <a
-                        href="#"
+                        href="/services/MarketResearch"
                         className="text-brandOrange font-semibold mt-4 inline-block"
                     >
                         👉 See how research fuels growth: Market Research & Competitor
@@ -220,9 +224,12 @@ const InfluencerResearchPage = () => {
                             </div>
                         ))}
                     </div>
-                    <p className="text-center mt-6 text-brandOrange font-semibold cursor-pointer hover:underline">
+                    <a
+                        href="/services/DataVerificationPage" // 🔗 replace with your actual route or external link
+                        className="block text-brandOrange font-semibold mt-6 text-center hover:underline"
+                    >
                         👉 Related Service: Data Verification & Fact-Checking
-                    </p>
+                    </a>
                 </div>
             </section>
 
@@ -245,9 +252,12 @@ const InfluencerResearchPage = () => {
                             </div>
                         ))}
                     </div>
-                    <p className="text-center mt-6 text-brandOrange font-semibold cursor-pointer hover:underline">
+                    <a
+                        href="/services/B2BLeadGeneration" // 🔗 replace with your actual route or external link
+                        className="block text-brandOrange font-semibold mt-6 text-center hover:underline"
+                    >
                         👉 Also explore: B2B Lead Generation Services
-                    </p>
+                    </a>
                 </div>
             </section>
 
@@ -319,6 +329,7 @@ const InfluencerResearchPage = () => {
                     </div>
                 </div>
             </section>
+            <FinalCTA />
         </div>
     );
 };

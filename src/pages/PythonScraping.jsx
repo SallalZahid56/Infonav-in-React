@@ -5,6 +5,7 @@ import introImg from "../assets/web scraping.png";
 import toolsImg from "../assets/python libraries.png";
 import { Plus, Minus } from "lucide-react";
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 
 const PythonScraping = () => {
 
@@ -278,13 +279,7 @@ const PythonScraping = () => {
                     </div>
                 </section>
 
-                {/* ✅ CTA */}
-                <section className="text-center py-12">
-                    <h3 className="text-2xl font-bold mb-4">Need Custom Python Scraping for Lead Generation?</h3>
-                    <a href="/#services" className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading text-base">
-                        Back to Services
-                    </a>
-                </section>
+                <FinalCTA />
             </div>
         </div>
     );

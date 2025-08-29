@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import FinalCTA from "../components/FinalCTA";
 import {
   FiCheckCircle,
   FiDatabase,
@@ -137,13 +137,13 @@ Slug: /data-cleaning-export</title>
           </ul>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <Link
-              to="/contact"
+              to="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
               className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading"
             >
-              Get Started
+            Book a Free Call
             </Link>
             <Link
-              to="/data-entry"
+              to="/services/DataEntry"
               className="px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition font-heading"
             >
               Related: Data Entry Services
@@ -253,6 +253,8 @@ Slug: /data-cleaning-export</title>
           </div>
         </div>
       </section>
+
+      <FinalCTA />
     </div>
   );
 }

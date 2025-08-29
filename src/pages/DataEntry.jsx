@@ -20,7 +20,7 @@ import {
   FiFileText,
   FiHome,
 } from "react-icons/fi";
-
+import FinalCTA from "../components/FinalCTA";
 import heroImg from "../assets/dataentry.webp"; // <-- replace with your asset (or keep internet.jpg you use elsewhere)
 import heroImgg from "../assets/data-entry-operator.jpeg.webp";
 
@@ -115,10 +115,10 @@ const DataEntryPage = () => {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link to="/contact" className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition">
+                <Link to="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website." className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition">
                   Book a Free Consultation
                 </Link>
-                <a href="#services" className="px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition">
+                <a href="/ServicesPage" className="px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition">
                   Explore Services
                 </a>
               </div>
@@ -130,8 +130,8 @@ const DataEntryPage = () => {
               </div>
 
               <div className="mt-6 text-sm">
-                <Link to="/crm-data-entry" className="text-brandOrange font-semibold inline-block mr-4">👉 Related: CRM Data Entry</Link>
-                <Link to="/data-cleaning" className="text-brandOrange font-semibold inline-block">| Data Cleaning &amp; Formatting</Link>
+                <Link to="/services/CRMDataEntry" className="text-brandOrange font-semibold inline-block mr-4">👉 Related: CRM Data Entry</Link>
+                <Link to="/services/DataCleaning" className="text-brandOrange font-semibold inline-block">| Data Cleaning &amp; Formatting</Link>
               </div>
             </div>
 
@@ -176,7 +176,7 @@ const DataEntryPage = () => {
             <p className="text-gray-700 mb-4">
               From remote data entry jobs to database entry services, our team handles every detail, allowing businesses to focus on growth.
             </p>
-            <Link to="/lead-generation" className="text-brandOrange font-semibold">👉 Related: Lead Generation Services</Link>
+            <Link to="/services/lead-generation" className="text-brandOrange font-semibold">👉 Related: Lead Generation Services</Link>
           </div>
 
           <div className="text-center">
@@ -196,7 +196,7 @@ const DataEntryPage = () => {
               title="CRM Data Entry"
             >
               Accurate CRM Data Entry helps businesses build stronger relationships with clients — importing Excel/CSV into Salesforce, HubSpot, Zoho and managing history.
-              <div className="mt-3"><Link to="/crm-data-entry" className="text-brandOrange font-semibold">👉 Learn more: CRM Data Entry</Link></div>
+              <div className="mt-3"><Link to="/services/CRMDataEntry" className="text-brandOrange font-semibold">👉 Learn more: CRM Data Entry</Link></div>
             </FeatureCard>
 
             <FeatureCard
@@ -204,7 +204,7 @@ const DataEntryPage = () => {
               title="Data Cleaning & Formatting"
             >
               Remove duplicates, fix inconsistencies, and format data for analytics or outreach.
-              <div className="mt-3"><Link to="/data-cleaning" className="text-brandOrange font-semibold">👉 Learn more: Data Cleaning &amp; Formatting</Link></div>
+              <div className="mt-3"><Link to="/services/DataCleaning" className="text-brandOrange font-semibold">👉 Learn more: Data Cleaning &amp; Formatting</Link></div>
             </FeatureCard>
 
             <FeatureCard
@@ -277,7 +277,7 @@ const DataEntryPage = () => {
           </div>
 
           <div className="mt-6">
-            <Link to="/ecommerce-seo" className="text-brandOrange font-semibold">👉 Related: E-commerce SEO | Web Development Services</Link>
+            <Link to="/services/SEOPage" className="text-brandOrange font-semibold">👉 Related: E-commerce SEO | Web Development Services</Link>
           </div>
         </div>
       </section>
@@ -342,13 +342,7 @@ const DataEntryPage = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-12 bg-brandOrange">
-        <div className="container mx-auto px-6 text-center text-white">
-          <h3 className="text-2xl font-heading font-bold mb-3">Ready to clean up your data and accelerate growth?</h3>
-          <Link to="/contact" className="inline-block bg-white text-brandOrange px-6 py-3 rounded-xl font-semibold shadow">Get Started</Link>
-        </div>
-      </section>
+      <FinalCTA />
     </div>
   );
 };

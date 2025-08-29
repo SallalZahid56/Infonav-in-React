@@ -14,6 +14,7 @@ import {
   FiBarChart
 } from "react-icons/fi";
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 
 const faqs = [
   {
@@ -84,13 +85,13 @@ export default function EmailMarketing() {
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
-                  to="/contact"
+                  to="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
                   className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition"
                 >
                   Book a Free Consultation
                 </Link>
                 <a
-                  href="#services"
+                  href="/ServicesPage"
                   className="px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition"
                 >
                   Explore Services
@@ -294,30 +295,7 @@ export default function EmailMarketing() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section className="relative overflow-hidden p-6 md:p-10 lg:p-12">
-        <div className="absolute inset-0 bg-gradient-to-br from-brandOrange via-orange-500 to-black opacity-90" />
-        <div className="container mx-auto px-6 py-16 relative text-white">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold">
-                Ready to Boost Your Revenue with Email Marketing?
-              </h2>
-              <p className="mt-3 text-orange-100">
-                Get a custom email marketing plan, timeline, and quote — tailored to your goals.
-              </p>
-            </div>
-            <div className="flex lg:justify-end">
-              <Link
-                to="/contact"
-                className="bg-white text-black px-6 py-3 rounded-xl font-semibold shadow hover:bg-black hover:text-white transition"
-              >
-                Book a Call
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FinalCTA />
     </div>
   );
 }

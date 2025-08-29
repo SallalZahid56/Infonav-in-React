@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronDown, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 
 const Section = ({ id, children, className = "" }) => (
   <section id={id} className={`w-full py-16 ${className}`}>
@@ -206,6 +207,7 @@ export default function EmailListPage() {
           ))}
         </div>
       </Section>
+      <FinalCTA />
     </div>
   );
 }

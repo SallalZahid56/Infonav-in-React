@@ -1,6 +1,7 @@
 import React from "react";
 import background from "../assets/banner.webp"; // Replace with your actual background image path
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 
 const DataCleaningPage = () => {
     const faqs = [
@@ -34,14 +35,14 @@ const DataCleaningPage = () => {
     <Helmet>
         <title>Data Cleaning & Export Services | Accurate Business Data Solutions</title>
         <meta
-          name="description"
-          content="Professional data cleaning & formatting services to ensure accuracy, consistency, and usability. From database cleanup to multi-source data integration, we turn messy data into actionable insights."
+            name="description"
+            content="Professional data cleaning & formatting services to ensure accuracy, consistency, and usability. From database cleanup to multi-source data integration, we turn messy data into actionable insights."
         />
         <meta
-          name="keywords"
-          content="data cleaning services, data cleansing, clean data, data cleanup, data cleaning methods, data cleansing process, data cleaning tools, data cleaning best practices, database cleaning, dataset cleaning, data scrubbing techniques"
+            name="keywords"
+            content="data cleaning services, data cleansing, clean data, data cleanup, data cleaning methods, data cleansing process, data cleaning tools, data cleaning best practices, database cleaning, dataset cleaning, data scrubbing techniques"
         />
-      </Helmet>
+    </Helmet>
 
     return (
         <div>
@@ -66,10 +67,10 @@ const DataCleaningPage = () => {
                     </p>
 
                     <a
-                        href="#contact"
+                        href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
                         className="bg-brandOrange text-white px-5 sm:px-6 py-3 rounded-lg shadow hover:bg-black transition font-heading text-sm sm:text-base"
                     >
-                        Get Started
+                        Book a Free Call
                     </a>
                 </div>
             </section>
@@ -83,9 +84,12 @@ const DataCleaningPage = () => {
                         only clean your databases but also provide data export services in
                         your desired format — Excel, CSV, SQL, CRM, or Google Sheets.
                     </p>
-                    <p className="text-brandOrange font-semibold mt-4">
+                    <a
+                        href="/services/CRMDataEntry" // 🔗 replace with your actual page route
+                        className="text-brandOrange font-semibold mt-4 hover:underline"
+                    >
                         👉 Related service: CRM Data Entry
-                    </p>
+                    </a>
                 </div>
             </section>
 
@@ -108,9 +112,12 @@ const DataCleaningPage = () => {
                             ✔️ Compliant – Following GDPR, HIPAA, and data privacy rules.
                         </li>
                     </ul>
-                    <p className="text-brandOrange font-semibold mt-6 text-center">
+                    <a
+                        href="/services/DataEntry" // 🔗 replace with your actual route or external link
+                        className="block text-brandOrange font-semibold mt-6 text-center hover:underline"
+                    >
                         👉 Related service: Data Verification & Fact-Checking
-                    </p>
+                    </a>
                 </div>
             </section>
 
@@ -136,9 +143,12 @@ const DataCleaningPage = () => {
                             teams.
                         </div>
                     </div>
-                    <p className="text-brandOrange font-semibold mt-6 text-center">
+                    <a
+                        href="/services/B2BLeadGeneration" // 🔗 replace with your actual route or external link
+                        className="block text-brandOrange font-semibold mt-6 text-center hover:underline"
+                    >
                         👉 Related service: B2B Lead Generation Services
-                    </p>
+                    </a>
                 </div>
             </section>
 
@@ -164,9 +174,12 @@ const DataCleaningPage = () => {
                             </div>
                         ))}
                     </div>
-                    <p className="text-brandOrange font-semibold mt-6 text-center">
+                    <a
+                        href="/services/EmailMarketing" // 🔗 replace with your actual route or external link
+                        className="block text-brandOrange font-semibold mt-6 text-center hover:underline"
+                    >
                         👉 Related service: Email Marketing Services
-                    </p>
+                    </a>
                 </div>
             </section>
 
@@ -203,9 +216,12 @@ const DataCleaningPage = () => {
                         <li>Trifacta Wrangler – Large-scale dataset cleaning</li>
                         <li>CRM Integrations – HubSpot, Zoho, Salesforce syncing</li>
                     </ul>
-                    <p className="text-brandOrange font-semibold mt-6 text-center">
+                    <a
+                        href="/services/DataExtraction" // 🔗 replace with your actual route or external link
+                        className="block text-brandOrange font-semibold mt-6 text-center hover:underline"
+                    >
                         👉 Related service: Data Extraction Services
-                    </p>
+                    </a>
                 </div>
             </section>
 
@@ -266,6 +282,7 @@ const DataCleaningPage = () => {
                     </div>
                 </div>
             </section>
+            <FinalCTA />
         </div>
     );
 };

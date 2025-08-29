@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CheckCircle, Globe, Users, FileText, Database, Layers } from "lucide-react";
 import { Helmet } from "react-helmet";
 import background from "../assets/seo-banner.jpeg";
+import FinalCTA from "../components/FinalCTA";
 
 const OffPageSEOPage = () => {
     const [faqOpen, setFaqOpen] = useState(null);
@@ -54,7 +55,7 @@ const OffPageSEOPage = () => {
                     <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 px-2">
                         Our white-hat link building, digital PR, guest posting, and outreach strategies help your business rank higher and stay ahead of competitors.
                     </p>
-                    <a href="#contact" className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading text-base sm:text-lg">
+                    <a href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website." className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading text-base sm:text-lg">
                         Get Started
                     </a>
                 </div>
@@ -140,6 +141,7 @@ const OffPageSEOPage = () => {
                     </div>
                 </div>
             </section>
+            <FinalCTA />
         </div>
     );
 };

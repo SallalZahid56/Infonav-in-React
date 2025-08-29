@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import FinalCTA from "../components/FinalCTA";
 import {
     CheckCircle,
     Mail,
@@ -109,13 +110,13 @@ export default function LeadGenerationPage() {
 
                         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                             <a
-                                href="#cta"
+                                href="#mailto:contact@infonavigators.com"
                                 className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full bg-brandOrange px-6 py-3 font-heading font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-black text-sm sm:text-base"
                             >
                                 <Send className="h-5 w-5" /> Get Free Sample Leads
                             </a>
                             <a
-                                href="#cta"
+                                href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
                                 className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 font-heading font-semibold text-black shadow-sm transition hover:-translate-y-0.5 hover:bg-gray-100 text-sm sm:text-base"
                             >
                                 <PhoneCall className="h-5 w-5" /> Book a Call
@@ -456,7 +457,7 @@ export default function LeadGenerationPage() {
                         Case Studies – Our Clients’ Success
                     </h2>
                     <a
-                        href="#"
+                        href="https://docs.google.com/spreadsheets/d/18DrAIpJO0TcyMJCZpIIdBDO1c2A_JeDqC4MRnEFQsXA/edit?gid=51388062#gid=51388062"
                         className="hidden rounded-full border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 md:inline"
                     >
                         Download PDF <Download className="ml-2 inline h-4 w-4" />
@@ -503,35 +504,7 @@ export default function LeadGenerationPage() {
                 </div>
             </Section>
 
-            {/* CTA */}
-            <Section id="cta">
-                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-sky-600 to-blue-600 p-8 sm:p-10 text-white shadow-xl">
-                    <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-white/10" />
-                    <div className="pointer-events-none absolute -right-12 -bottom-12 h-48 w-48 rounded-full bg-white/10" />
-                    <div className="mx-auto max-w-3xl text-center">
-                        <h3 className="text-2xl font-bold md:text-3xl">
-                            Ready to Fill Your Sales Pipeline with Verified Leads?
-                        </h3>
-                        <p className="mt-2 text-white/90">
-                            Get a free sample tailored to your ICP, or jump on a quick call to discuss goals.
-                        </p>
-                        <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                            <a
-                                href="#"
-                                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-slate-900 shadow hover:-translate-y-0.5"
-                            >
-                                <Send className="h-5 w-5" /> Get Free Sample Now
-                            </a>
-                            <a
-                                href="#"
-                                className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white shadow hover:-translate-y-0.5"
-                            >
-                                <PhoneCall className="h-5 w-5" /> Book a Call
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </Section>
+            <FinalCTA />
         </div>
     );
 }

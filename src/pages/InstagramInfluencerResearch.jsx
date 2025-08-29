@@ -11,7 +11,7 @@ import {
   Globe,
   ChevronDown,
 } from "lucide-react";
-
+import FinalCTA from "../components/FinalCTA";
 // replace these imports with your actual asset filenames in src/assets/
 import instagramImg from "../assets/instagramInfluencers.jpg";
 import processImg from "../assets/influencerresearchprocess.png";
@@ -136,7 +136,7 @@ export default function InstagramInfluencerResearch() {
         </p>
 
         <a
-          href="#offers"
+          href="/ServicesPage"
           className="inline-block mt-6 bg-brandOrange text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-black transition"
         >
           See our full service
@@ -167,7 +167,7 @@ export default function InstagramInfluencerResearch() {
             </div>
 
             <div className="mt-4">
-              <a href="/services/influencer-research" className="text-brandOrange font-semibold hover:underline">
+              <a href="/services/lead-generation" className="text-brandOrange font-semibold hover:underline">
                 👉 Complementary Service: Lead Generation Services
               </a>
             </div>
@@ -202,7 +202,7 @@ export default function InstagramInfluencerResearch() {
             ))}
 
             <div className="mt-4">
-              <a href="/services/data-verification" className="text-brandOrange font-semibold hover:underline">
+              <a href="/services/DataVerificationPage" className="text-brandOrange font-semibold hover:underline">
                 👉 Related Service: Data Verification & Fact-Checking
               </a>
             </div>
@@ -233,7 +233,7 @@ export default function InstagramInfluencerResearch() {
               </div>
             ))}
             <div className="mt-3">
-              <a href="/services/data-verification" className="text-brandOrange font-semibold hover:underline">
+              <a href="/services/DataVerificationPage" className="text-brandOrange font-semibold hover:underline">
                 👉 Related: Data Verification & Fact-Checking Services
               </a>
             </div>
@@ -266,7 +266,7 @@ export default function InstagramInfluencerResearch() {
         </div>
 
         <div className="text-center mt-6">
-          <a href="/services/lead-generation" className="text-brandOrange font-semibold hover:underline">
+          <a href="/services/B2BLeadGeneration" className="text-brandOrange font-semibold hover:underline">
             👉 For SaaS outreach: B2B Lead Generation Services
           </a>
         </div>
@@ -335,6 +335,8 @@ export default function InstagramInfluencerResearch() {
           ))}
         </div>
       </section>
+
+      <FinalCTA />
 
       {/* bottom spacing */}
       <div className="h-20" />

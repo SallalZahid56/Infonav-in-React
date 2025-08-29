@@ -10,6 +10,7 @@ import Testimonials from "./components/Testimonials";
 import Tools from "./components/Tools";
 import WhyChooseUs from "./components/WhyChooseUs";
 import FAQ from "./components/FAQ";
+import FinalCTA from "./components/FinalCTA";
 
 // ✅ About page
 import AboutUs from "./pages/AboutUs"; // we'll create this in pages folder
@@ -44,6 +45,8 @@ import WebDevelopment from "./pages/WebDevelopment";
 import FrontEndDevelopment from "./pages/FrontEndDevelopment";
 import BackEndDevelopment from "./pages/BackEndDevelopment";
 import Portfolio from "./pages/Portfolio";
+import ContactUs from "./pages/contact-us";
+
 
 function App() {
   return (
@@ -64,6 +67,7 @@ function App() {
               <WhyChooseUs />
               <Testimonials />
               <FAQ />
+              <FinalCTA />
             </>
           }
         />
@@ -71,6 +75,7 @@ function App() {
         {/* About Us Page */}
         <Route path="/about" element={<AboutUs />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact-us" element={<ContactUs />} />
 
         <Route path="/servicesPage" element={<ServicesPage />} />
         {/* ✅ New Lead Generation Page */}

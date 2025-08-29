@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import background from "../assets/seo-banner.jpeg"; // same image you used elsewhere
 import backgroundImg from "../assets/seo.jpeg";
+import FinalCTA from "../components/FinalCTA";
 
 const SEOPage = () => {
   const [faqOpen, setFaqOpen] = useState(null);
@@ -268,6 +269,7 @@ const SEOPage = () => {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 };

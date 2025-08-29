@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { CheckCircle, ChevronDown, ChevronUp, Target, Users, Database, BarChart, FileSpreadsheet, Wrench, Globe, ShoppingBag, GraduationCap, Plane, HeartPulse, Star } from "lucide-react";
-
+import FinalCTA from "../components/FinalCTA";
 import internetImg from "../assets/youtube-influencers.webp"; // ✅ Imported image
 
 const brandOrange = "text-orange-500";
@@ -238,6 +238,7 @@ const YouTubeInfluencerResearch = () => {
                     ))}
                 </div>
             </section>
+            <FinalCTA />
         </div>
     );
 };
