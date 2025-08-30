@@ -64,10 +64,10 @@ const WebsiteDevelopmentPage = () => {
             We build high-performance CMS websites that convert, perform, and scale globally.
           </p>
           <div className="flex items-center justify-center gap-4">
-            <Link to="/contact" className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading">
+            <Link to="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website." className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading">
               Book a Free Consultation
             </Link>
-            <a href="#core-services" className="inline-block px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition font-heading bg-white/10">
+            <a href="/ServicesPage" className="inline-block px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition font-heading bg-white/10">
               Explore Services
             </a>
           </div>

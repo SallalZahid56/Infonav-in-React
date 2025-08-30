@@ -81,7 +81,7 @@ const PythonScraping = () => {
                     <p className="text-base sm:text-lg mb-6">
                         Leverage Python-powered scraping for structured, real-time data that fuels smarter decisions.
                     </p>
-                    <a href="#contact" className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading text-base">
+                    <a href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website." className="bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading text-base">
                         Get Started
                     </a>
                 </div>

@@ -115,13 +115,13 @@ const SEOPage = () => {
           </p>
           <div className="flex items-center justify-center gap-4">
             <Link
-              to="/contact"
+              to="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
               className="inline-block bg-brandOrange text-white px-6 py-3 rounded-xl shadow hover:bg-black transition font-heading"
             >
               Book a Free Consultation
             </Link>
             <a
-              href="#core-services"
+              href="/ServicesPage"
               className="inline-block px-6 py-3 rounded-xl border border-gray-300 hover:border-black hover:text-black transition font-heading bg-white/10"
             >
               Explore Services
@@ -129,7 +129,7 @@ const SEOPage = () => {
           </div>
 
           <p className="mt-6 text-sm text-gray-300">
-            👉 Related service: <Link to="/lead-generation" className="text-white underline">Lead Generation Services</Link>
+            👉 Related service: <Link to="/services/lead-generation" className="text-white underline">Lead Generation Services</Link>
           </p>
         </div>
       </section>
@@ -191,7 +191,7 @@ const SEOPage = () => {
             <p className="mt-6 text-sm text-gray-600">
               We’re more than an SEO company — we’re your long-term growth partner.
             </p>
-            <p className="mt-3 text-sm text-gray-500">👉 Related service: <Link to="/data-entry" className="text-brandOrange underline">Data Entry Services</Link></p>
+            <p className="mt-3 text-sm text-gray-500">👉 Related service: <Link to="/services/DataEntry" className="text-brandOrange underline">Data Entry Services</Link></p>
           </div>
 
           <div className="md:w-1/2">
@@ -212,7 +212,7 @@ const SEOPage = () => {
               </span>
             ))}
           </div>
-          <p className="mt-6 text-sm text-gray-500">👉 Related service: <Link to="/data-extraction" className="text-brandOrange underline">Data Extraction Services</Link></p>
+          <p className="mt-6 text-sm text-gray-500">👉 Related service: <Link to="/services/DataExtraction" className="text-brandOrange underline">Data Extraction Services</Link></p>
         </div>
       </section>
 

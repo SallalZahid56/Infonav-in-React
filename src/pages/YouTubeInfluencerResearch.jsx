@@ -63,7 +63,7 @@ const YouTubeInfluencerResearch = () => {
                     <p className="text-lg leading-relaxed mb-4">
                         But finding the right creators is challenging. Many businesses waste resources on influencers with low engagement or mismatched audiences. Our YouTube Influencer Research Services ensure you partner with authentic, data-verified influencers who bring measurable results.
                     </p>
-                    <a href="#" className="text-orange-500 font-semibold hover:underline">
+                    <a href="/services/InfluencerResearch" className="text-orange-500 font-semibold hover:underline">
                         👉 Related service: Influencer Research Services
                     </a>
                 </div>
@@ -92,7 +92,7 @@ const YouTubeInfluencerResearch = () => {
                             ))}
                         </ul>
                         <a
-                            href="#"
+                            href="/services/MarketResearch"
                             className="inline-block mt-6 text-orange-500 font-semibold hover:underline"
                         >
                             👉 Learn more: Market Research & Competitor Analysis
@@ -129,7 +129,7 @@ const YouTubeInfluencerResearch = () => {
                     ))}
                 </div>
                 <div className="text-center mt-6">
-                    <a href="#" className="text-orange-500 font-semibold hover:underline">
+                    <a href="/services/DataCleaningExtraction" className="text-orange-500 font-semibold hover:underline">
                         👉 Related solution: Data Cleaning & Formatting Services
                     </a>
                 </div>
@@ -155,7 +155,7 @@ const YouTubeInfluencerResearch = () => {
                     ))}
                 </div>
                 <div className="text-center mt-6">
-                    <a href="#" className="text-orange-500 font-semibold hover:underline">
+                    <a href="/services/DataCleaningExtraction" className="text-orange-500 font-semibold hover:underline">
                         👉 Also see: Data Verification & Fact-Checking Services
                     </a>
                 </div>
@@ -181,7 +181,7 @@ const YouTubeInfluencerResearch = () => {
                     ))}
                 </div>
                 <div className="text-center mt-6">
-                    <a href="#" className="text-orange-500 font-semibold hover:underline">
+                    <a href="/services/B2BLeadGeneration" className="text-orange-500 font-semibold hover:underline">
                         👉 For SaaS campaigns, explore: B2B Lead Generation Services
                     </a>
                 </div>

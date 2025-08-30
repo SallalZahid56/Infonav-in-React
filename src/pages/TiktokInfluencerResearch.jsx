@@ -52,17 +52,17 @@ const TikTokInfluencerResearch = () => {
     },
   ];
 
-    <Helmet>
-        <title>TikTok Influencer Research Services | Verified Creator Discovery</title>
-        <meta
-          name="description"
-          content="Expert TikTok influencer research to help brands discover verified creators, analyze engagement, and deliver data-driven influencer lists for high-ROI campaigns."
-        />
-        <meta
-          name="keywords"
-          content="TikTok influencer research, TikTok influencer discovery, TikTok influencer marketing research, TikTok influencer lists, influencer research services, influencer research company"
-        />
-      </Helmet>
+  <Helmet>
+    <title>TikTok Influencer Research Services | Verified Creator Discovery</title>
+    <meta
+      name="description"
+      content="Expert TikTok influencer research to help brands discover verified creators, analyze engagement, and deliver data-driven influencer lists for high-ROI campaigns."
+    />
+    <meta
+      name="keywords"
+      content="TikTok influencer research, TikTok influencer discovery, TikTok influencer marketing research, TikTok influencer lists, influencer research services, influencer research company"
+    />
+  </Helmet>
 
   return (
     <div className="w-full bg-white text-gray-900 font-sans">
@@ -79,16 +79,20 @@ const TikTokInfluencerResearch = () => {
             high-performing influencers with real engagement and audience
             alignment.
           </p>
-          <p className="text-brandOrange font-semibold">
-            👉 Related service: Influencer Research Services
+          <p className="text-brandOrange font-semibold text-center">
+            👉 <a href="/services/InfluencerResearch" className="underline hover:text-black">
+              Related service: Influencer Research Services
+            </a>
           </p>
         </div>
 
         {/* Button at bottom center */}
         <div className="mt-8">
-          <button className="bg-brandOrange text-white px-8 py-3 rounded-lg font-semibold hover:bg-black transition">
-            Get Started Now
-          </button>
+          <a href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website.">
+            <button className="bg-brandOrange text-white px-8 py-3 rounded-lg font-semibold hover:bg-black transition">
+              Get Started Now
+            </button>
+          </a>
         </div>
       </section>
 
@@ -121,8 +125,10 @@ const TikTokInfluencerResearch = () => {
                 boosting your competitors’ visibility.
               </li>
             </ul>
-            <p className="text-brandOrange font-semibold">
-              👉 Explore more: Market Research & Competitor Analysis
+            <p className="text-brandOrange font-semibold text-center">
+              👉 <a href="/services/MarketResearch" className="underline hover:text-black">
+                👉 Explore more: Market Research & Competitor Analysis
+              </a>
             </p>
           </div>
           <img
@@ -155,8 +161,10 @@ const TikTokInfluencerResearch = () => {
             </div>
           ))}
         </div>
-        <p className="text-center mt-6 text-brandOrange font-semibold">
-          👉 Supporting service: Data Cleaning & Formatting
+        <p className="text-brandOrange font-semibold text-center">
+          👉 <a href="/services/DataCleaning" className="underline hover:text-black">
+            👉 Supporting service: Data Cleaning & Formatting
+          </a>
         </p>
       </section>
 
@@ -182,8 +190,10 @@ const TikTokInfluencerResearch = () => {
             </div>
           ))}
         </div>
-        <p className="text-center mt-6 text-brandOrange font-semibold">
-          👉 Related service: Data Verification & Fact-Checking
+        <p className="text-brandOrange font-semibold text-center">
+          👉 <a href="/services/DataCleaningExtraction" className="underline hover:text-black">
+            👉 Related service: Data Verification & Fact-Checking
+          </a>
         </p>
       </section>
 
@@ -209,8 +219,10 @@ const TikTokInfluencerResearch = () => {
             </div>
           ))}
         </div>
-        <p className="text-center mt-6 text-brandOrange font-semibold">
-          👉 Looking for SaaS campaigns? Visit: B2B Lead Generation Services
+        <p className="text-brandOrange font-semibold text-center">
+          👉 <a href="/services/B2BLeadGeneration" className="underline hover:text-black">
+            👉 Looking for SaaS campaigns? Visit: B2B Lead Generation Services
+          </a>
         </p>
       </section>
 
@@ -278,9 +290,8 @@ const TikTokInfluencerResearch = () => {
               <div className="flex justify-between items-center">
                 <p className="font-semibold">{faq.question}</p>
                 <ChevronDown
-                  className={`w-5 h-5 transition-transform ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
+                  className={`w-5 h-5 transition-transform ${openIndex === index ? "rotate-180" : ""
+                    }`}
                 />
               </div>
               {openIndex === index && (
